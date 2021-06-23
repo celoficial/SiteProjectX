@@ -6,13 +6,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { CardComponent } from './card/card.component';
 
 
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-  ],
+  declarations: [HeaderComponent, CardComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -21,8 +20,6 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatListModule,
   ],
-  exports: [
-    HeaderComponent
-  ]
+  exports: [HeaderComponent, CardComponent],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

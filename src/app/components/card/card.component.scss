@@ -1,0 +1,31 @@
+.card{
+
+  width: 200px;
+  height: 500px;
+  background-color: #292847;
+  margin-top: 10%;
+  margin-left: 5%;
+
+ border-top-left-radius: 1rem;
+ border-top-right-radius: 1rem;
+
+  img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 200px;
+    height: 400px;
+  }
+
+  .card-title{
+
+    color:#EBE5E2;
+    padding-left: 5px;
+
+  }
+
+  .rating{
+    padding-right: 10px;
+
+  }
+
+}
