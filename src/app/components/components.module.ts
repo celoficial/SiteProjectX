@@ -7,11 +7,18 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './card/card.component';
+import { SearchComponent } from './search/search.component';
+import { CategoryComponent } from './category/category.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, CardComponent],
+  declarations: [
+    HeaderComponent,
+    CardComponent,
+    SearchComponent,
+    CategoryComponent,
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -20,6 +27,6 @@ import { CardComponent } from './card/card.component';
     MatIconModule,
     MatListModule,
   ],
-  exports: [HeaderComponent, CardComponent],
+  exports: [HeaderComponent, CardComponent, SearchComponent, CategoryComponent],
 })
 export class ComponentsModule {}

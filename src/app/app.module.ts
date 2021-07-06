@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import { ListagemComponent } from './pages/listagem/listagem.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListagemComponent
   ],
   imports: [
     BrowserModule,

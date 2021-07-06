@@ -1,13 +1,23 @@
-.card {
-  margin: 5px;
-  width: 300px;
-  background-color: #373b69;
-  border-radius: 3px;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+.card-section {
+  width: 100vw; //100% da view
+  display: flex;
+  overflow-x: auto; //trás a scroll bar pro card-section
+  //overflow-x: hidden; //esconde a scroll bar
+  white-space: nowrap;
+  flex-direction: row;
+
+  .card {
+    margin: 10px;
+    margin-top: 2px;
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+   // overflow: hidden;
+    flex: none;
+  }
 
   img {
-    width: 100%;
+    width: 300px;
     max-height: 400px;
   }
 
@@ -28,5 +38,15 @@
       border-radius: 3px;
       padding: 0.25rem 0.5rem;
     }
+  }
+
+  .scroll-left {
+    background-color: #83cfdf;
+    float: left;
+  }
+
+  .scroll-right {
+    background-color: #83cfdf;
+    float: right;
   }
 }
