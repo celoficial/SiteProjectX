@@ -1,6 +1,16 @@
-.category{
-  color: #83CFDF;
-  margin: 10px;
+.category {
+  display: flex;
+  align-items: center;
+  color: #83cfdf;
   margin-top: 30px;
   font-weight: 400;
+
+  h2 {
+    margin: 10px;
+  }
+
+  a {
+    color: #83cfdf;
+    letter-spacing: 1px;
+  }
 }
