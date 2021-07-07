@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './card/card.component';
 import { SearchComponent } from './search/search.component';
 import { CategoryComponent } from './category/category.component';
+import { InfoComponent } from './info/info.component';
 
 
 
@@ -18,6 +19,7 @@ import { CategoryComponent } from './category/category.component';
     CardComponent,
     SearchComponent,
     CategoryComponent,
+    InfoComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +29,12 @@ import { CategoryComponent } from './category/category.component';
     MatIconModule,
     MatListModule,
   ],
-  exports: [HeaderComponent, CardComponent, SearchComponent, CategoryComponent],
+  exports: [
+    HeaderComponent,
+    CardComponent,
+    SearchComponent,
+    CategoryComponent,
+    InfoComponent,
+  ],
 })
 export class ComponentsModule {}
