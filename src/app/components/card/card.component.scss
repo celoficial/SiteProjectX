@@ -1,49 +1,38 @@
 .scroll-bar {
   width: 100vw;
   display: flex;
-  
+  justify-content: center;
+  justify-items: center;
 
 
   .scroll-arrow {
-    background-color: #83cfdf;
     margin: 2%;
-
-
-    color: #373b69;
+    color: #ebe5e2;
     height: 30%;
     line-height: 150px;
     width: 50px;
-    font-size: 50px;
-    text-align: center;
+    font-size: 100px;
     margin-top: 10%;
-    border-radius: 50px;
     cursor: pointer;
+  }
+  .scroll-arrow:hover{
 
-
-    .scroll-left {
-      left: -50px;
-      float: left;
-    }
-
-    .scroll-right {
-      right: -50px;
-      float: right;
-    }
-
+  color:#83cfdf;
+  transition: 0.5s ease-in-out;
   }
 
   .card-section {
     transition: 0.3s ease-in-out;
-    width: 90vw; //100% da view
+    width: 79vw;
     display: flex;
     overflow-x: auto; //trás a scroll bar pro card-section
-    //overflow-x: hidden; //esconde a scroll bar
+    overflow-x: hidden; //esconde a scroll bar
     white-space: nowrap;
     flex-direction: row;
 
+
     .card {
       margin: 10px;
-      margin-top: 2px;
       background-color: #373b69;
       border-radius: 3px;
       overflow: hidden;
@@ -53,7 +42,7 @@
     }
 
     .card:hover {
-      margin-top: -0.5%;
+      margin-top: -0.01%;
       box-shadow: 1px 1px 5px 3px rgb(20, 20, 20);
     }
 
