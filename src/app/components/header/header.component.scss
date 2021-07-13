@@ -1,16 +1,18 @@
 .header {
   background-color: #292847 !important;
   justify-items: center;
-  // justify-content: center;
   color: #83cfdf;
   font-size: 18px;
   position: fixed;
   box-shadow: 0px 0px 2px 1px rgb(20,20,20);
+  height: 80px;
+
 
 
   span {
     //color: #83cfdf;
     padding: 0.5rem 1rem;
+     cursor: pointer;
     font-size: 21px;
   }
 
@@ -35,6 +37,11 @@
 
   .spacer {
     flex: 1 1 auto;
+  }
+
+  img{
+    width: 80px;
+    cursor: pointer;
   }
 
 }
