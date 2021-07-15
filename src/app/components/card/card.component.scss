@@ -90,13 +90,14 @@
     display: none;
     justify-content: space-between;
 
+
     .mat-icon {
       padding: 0rem 8rem 2rem;
       align-items: right;
-      cursor: pointer;
     }
   }
   a {
+    color: white;
     text-decoration:none;
   }
   .card:hover .mais-informacoes {

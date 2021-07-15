@@ -1,123 +1,136 @@
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem 1rem;
+  font-size: 20px;
+  margin-top: 8%;
+  width: 10px;
+}
 .content {
-  margin: 4%;
-  width: 90vw;
-  margin-top: 10%;
- // max-width: 80vw;
+  background-color: white;
+  //width: 80vw;
+  width: 80%;
+  border-radius: 5px;
+  justify-content: center;
+  margin-left: 10%;
+  align-items: center;
 
-  .anime-info {
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
 
-    p {
-      color: rgb(145, 143, 143);
-      padding: 0.25rem;
+  .temporadas {
+    padding: 3rem 2rem 0rem;
+    color: #708ed2;
+
+    h1 {
+      font-weight: 500;
+      font-size: 30px;
     }
-    .img-description {
-      border-radius: 10px;
-      width: 400px;
-      max-height: 550px;
-      box-shadow: 1px 1px 5px 2px rgb(20, 20, 20);
-    }
-
-    .rating {
-      display: flex;
-      width: 5%;
-      margin-top: 4%;
-
-      h2 {
-        margin-top: 5%;
-        flex: none;
-        color: #708ed2;
-        font-size: 48px;
-        padding: 0.5rem 3rem 1rem;
-        display: flex;
-        width: 100%;
-        display: block;
-      }
-      span {
-        color: white;
-        font-weight: 500;
-        background-color: #708ed2;
-        border-radius: 35px;
-        font-size: 20px;
-        padding: 0.25rem 0.5rem;
-        width: 28px;
-        height: 30px;
-        line-height: 30px;
-      }
-    }
-
     .episodios {
-      overflow-y: scroll;
-      //overflow-x: none;
-      overflow-x: hidden;
-      margin: 10px;
-      width: 48vw;
+      overflow-x: scroll;
+      margin: 2%;
+      width: 75vw;
+
       max-height: 500px;
+      display: flex;
 
       h2 {
-        color: #708ed2;
-        font-size: 24px;
+        font-size: 22px;
         padding: 0.5rem 3rem;
+        position: absolute;
       }
-
       .episodio {
+        margin-top: 5%;
+
         .thumb-episodio {
           width: 200px;
           height: 120px;
           margin-top: 5px;
           cursor: pointer;
-          box-shadow: 1px 1px 3px 2px rgb(109, 108, 108);
-          border-radius: 4px;
+          border-radius: 2px;
+          margin: 5px;
         }
 
         .thumb-episodio:hover {
           opacity: 70%;
           transition: 0.5s ease-in-out;
         }
-
       }
     }
   }
 
-  .description {
-    h5 {
-      color: black;
-      font-size: 16px;
-      margin-top: 22%;
-      width: 70%;
-    }
+  button {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 8px;
+    background-color: #708ed2;
+    border-radius: 10px;
+    height: 45px;
+    border: none;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 
-    button {
-      font-size: 20px;
-      color: white;
-      cursor: pointer;
+  button:hover {
+    background-color: #527cdf;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0);
+  }
+}
+
+.anime-info {
+  background-color: rgb(245, 241, 241);
+  border-radius: 10px;
+  display: flex;
+  height: 570px;
+
+  p {
+    color: rgb(145, 143, 143);
+    padding: 0.25rem;
+  }
+  .img-description {
+    border-radius: 10px 0px 0px 0px;
+    width: 400px;
+    max-height: 570px;
+  }
+
+  .rating {
+    display: flex;
+    width: 5%;
+    margin-top: 4%;
+
+    h2 {
       margin-top: 5%;
+      flex: none;
+      color: #708ed2;
+      font-size: 48px;
+      padding: 0.5rem 3rem 1rem;
+      display: flex;
+      width: 100%;
+      display: block;
+    }
+    span {
+      color: white;
+      font-weight: 500;
       background-color: #708ed2;
-      border-radius: 10px;
-      height: 45px;
-      border: none;
-      width: 30%;
-      margin-right: 10px;
+      border-radius: 35px;
+      font-size: 20px;
+      padding: 0.25rem 0.5rem;
+      width: 28px;
+      height: 30px;
+      line-height: 30px;
     }
+  }
+}
 
-    button:hover {
-      background-color: #373b69;
-      transition: 0.5s ease-in-out;
-      box-shadow: 1px 1px 2px 2px rgb(55, 55, 56);
-      border-radius: 30px;
-    }
-
-    .button-plus {
-      font-size: 25px;
-      font-weight: 600;
-      border-radius: 25px;
-      height: 45px;
-      line-height: 45px;
-      border: none;
-      width: 45px;
-      margin-right: 10px;
-    }
+.description {
+  h5 {
+    color: black;
+    font-size: 16px;
+    margin-top: 15%;
+    width: 70%;
   }
 }
