@@ -10,6 +10,8 @@ import { CardComponent } from './card/card.component';
 import { SearchComponent } from './search/search.component';
 import { CategoryComponent } from './category/category.component';
 import { InfoComponent } from './info/info.component';
+import { SeasonsComponent } from './seasons/seasons.component';
+
 
 
 
@@ -20,6 +22,8 @@ import { InfoComponent } from './info/info.component';
     SearchComponent,
     CategoryComponent,
     InfoComponent,
+    SeasonsComponent,
+
   ],
   imports: [
     CommonModule,
@@ -35,6 +39,7 @@ import { InfoComponent } from './info/info.component';
     SearchComponent,
     CategoryComponent,
     InfoComponent,
+    SeasonsComponent,
   ],
 })
 export class ComponentsModule {}

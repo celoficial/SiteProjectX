@@ -1,84 +1,31 @@
-a {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  padding: 0rem 1rem 1rem;
-  font-size: 20px;
-  margin-top: 8%;
-  width: 10px;
+
+h1 {
+  font-weight: 500;
+  font-size: 30px;
+  flex: none;
+  color: #83cfdf;
+  padding: 3rem 2rem 0rem;
+  background-color: #292847;
 }
-.content {
-  background-color: white;
-  //width: 80vw;
-  width: 80%;
-  border-radius: 5px;
-  justify-content: center;
-  margin-left: 10%;
+
+button {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 8px;
+  background-color: #708ed2;
+  border-radius: 10px;
+  height: 45px;
+  border: none;
+  margin-right: 10px;
   align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
-
-  .temporadas {
-    padding: 3rem 2rem 0rem;
-    color: #708ed2;
-
-    h1 {
-      font-weight: 500;
-      font-size: 30px;
-    }
-    .episodios {
-      overflow-x: scroll;
-      margin: 2%;
-      width: 75vw;
-
-      max-height: 500px;
-      display: flex;
-
-      h2 {
-        font-size: 22px;
-        padding: 0.5rem 3rem;
-        position: absolute;
-      }
-      .episodio {
-        margin-top: 5%;
-
-        .thumb-episodio {
-          width: 200px;
-          height: 120px;
-          margin-top: 5px;
-          cursor: pointer;
-          border-radius: 2px;
-          margin: 5px;
-        }
-
-        .thumb-episodio:hover {
-          opacity: 70%;
-          transition: 0.5s ease-in-out;
-        }
-      }
-    }
-  }
-
-  button {
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    margin: 8px;
-    background-color: #708ed2;
-    border-radius: 10px;
-    height: 45px;
-    border: none;
-    margin-right: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  button:hover {
-    background-color: #527cdf;
-    transition: 0.4s ease-in-out;
-    box-shadow: 0px 2px 9px rgba(0, 0, 0);
-  }
+button:hover {
+  background-color: #527cdf;
+  transition: 0.4s ease-in-out;
 }
 
 .anime-info {
@@ -97,40 +44,36 @@ a {
     max-height: 570px;
   }
 
-  .rating {
-    display: flex;
-    width: 5%;
-    margin-top: 4%;
+  h2 {
+    height: 20px;
+    margin-top: 5%;
+    color: #708ed2;
+    font-size: 42px;
+    width: 80%;
+    line-height: 50px;
+  }
 
-    h2 {
-      margin-top: 5%;
-      flex: none;
-      color: #708ed2;
-      font-size: 48px;
-      padding: 0.5rem 3rem 1rem;
-      display: flex;
-      width: 100%;
-      display: block;
-    }
-    span {
-      color: white;
-      font-weight: 500;
-      background-color: #708ed2;
-      border-radius: 35px;
-      font-size: 20px;
-      padding: 0.25rem 0.5rem;
-      width: 28px;
-      height: 30px;
-      line-height: 30px;
-    }
+  span {
+    color: white;
+    font-weight: 500;
+    background-color: #708ed2;
+    border-radius: 35px;
+    font-size: 20px;
+    padding: 0.25rem 0.4rem;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
   }
 }
 
 .description {
+  padding: 1rem 2rem 1rem;
   h5 {
-    color: black;
+    display: flex;
+    color: rgb(71, 70, 70);
     font-size: 16px;
-    margin-top: 15%;
-    width: 70%;
+    margin-top: 80px;
+    width: 80%;
+
   }
 }

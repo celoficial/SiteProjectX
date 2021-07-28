@@ -22,7 +22,7 @@ import { DetalhesComponent } from './pages/detalhes/detalhes.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
