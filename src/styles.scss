@@ -1,4 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #83cfdf;
+  font-weight: 550;
+}
+
+.mat-form-field {
+  color: white !important;
+}
+
+.mat-form-field-focused {
+  color: white !important;
+}
+.mat-form-field-label {
+  color: white !important;
+}
+
+.mat-form-field-underline {
+  background-color: white !important;
+}
+
+.mat-form-field-placeholder {
+  color: white !important;
+}
+
+.mat-label {
+  background-color: white !important;
+}
+
+

@@ -1,4 +1,6 @@
+
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -13,8 +15,6 @@ import { InfoComponent } from './info/info.component';
 import { SeasonsComponent } from './seasons/seasons.component';
 
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -23,15 +23,17 @@ import { SeasonsComponent } from './seasons/seasons.component';
     CategoryComponent,
     InfoComponent,
     SeasonsComponent,
-
   ],
+
   imports: [
+    BrowserModule,
     CommonModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+
   ],
   exports: [
     HeaderComponent,
