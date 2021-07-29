@@ -1,0 +1,93 @@
+.content {
+  background-color: #1e1f33;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
+
+  .container {
+    margin: 5%;
+  }
+
+  .mat-form-field {
+    width: 550px;
+  }
+
+  .birth {
+    border: none;
+    padding: 0rem 0.7rem 0rem;
+
+    input {
+      height: 30px;
+      width: 200px;
+    }
+  }
+
+  img {
+    height: 42px;
+    width: 40px;
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  .facebook-btn {
+    color: white;
+    margin-top: 2%;
+    margin-right: 5px;
+    background-color: #3b5998;
+    width: 270px;
+  }
+
+  .google-btn {
+    color: white;
+    margin-top: 2%;
+    background-color: #ce5643;
+    width: 270px;
+  }
+
+  .btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #708ed2;
+    height: 55px;
+    border: none;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    justify-content: center;
+  }
+
+  .btn:hover {
+    background-color: #527cdf;
+    transition: 0.4s ease-in-out;
+  }
+
+  h2 {
+    height: 20px;
+    color: #83cfdf;
+    font-size: 42px;
+    text-align: center;
+    margin: 5%;
+  }
+
+  .birth-text {
+    color: white;
+    padding: 1rem 0.1rem 0rem;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem 0rem 0rem;
+  }
+
+  input {
+    border-radius: 4px;
+    border: none;
+  }
+}

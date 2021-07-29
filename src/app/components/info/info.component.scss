@@ -8,13 +8,13 @@ h1 {
   background-color: #292847;
 }
 
-button {
+.mat-button {
   font-size: 20px;
   color: white;
   cursor: pointer;
   margin: 8px;
   background-color: #708ed2;
-  border-radius: 10px;
+
   height: 45px;
   border: none;
   margin-right: 10px;
@@ -23,10 +23,11 @@ button {
   justify-content: center;
 }
 
-button:hover {
+.mat-button:hover {
   background-color: #527cdf;
   transition: 0.4s ease-in-out;
 }
+
 
 .anime-info {
   background-color: rgb(245, 241, 241);
