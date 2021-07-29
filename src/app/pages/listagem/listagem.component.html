@@ -3,17 +3,15 @@
   <!-- <app-search class="lista"></app-search> -->
   <app-category class="lista"></app-category>
   <div class="list-card">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <a [routerLink]="['/details/'+card.id]" *ngFor="let card of listCards">
+      <app-card [card]=card></app-card>
+    </a>
   </div>
   <app-category class="lista"></app-category>
   <div class="list-card">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <a [routerLink]="['/details/'+card.id]" *ngFor="let card of listCards">
+      <app-card [card]=card></app-card>
+    </a>
   </div>
 </div>
 

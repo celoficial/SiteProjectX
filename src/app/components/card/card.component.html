@@ -1,24 +1,20 @@
 <div class="card">
   <img
-    src="https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg"
+    src="{{card.thumburl}}"
     alt=""
   />
 
   <div class="card-info">
-    <h2>Título</h2>
-    <span>2.5</span>
+    <h2>{{card.title}}</h2>
+    <span>{{card.rating}}</span>
 
     <!-- Apenas para fins visuais -->
     <div class="rating">
-      <mat-icon>star</mat-icon>
-      <mat-icon>star</mat-icon>
-      <mat-icon>star_half</mat-icon>
-      <mat-icon>star_border</mat-icon>
-      <mat-icon>star_border</mat-icon>
+      <mat-icon *ngFor="let ratting of array">{{ratting}}</mat-icon>
     </div>
 
     <div class="mais-informacoes">
-      <a href="">Mais informações</a>
+      <div class="moreInfo">Mais informações</div>
       <mat-icon>bookmark</mat-icon>
     </div>
   </div>

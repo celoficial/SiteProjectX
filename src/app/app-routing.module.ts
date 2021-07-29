@@ -5,9 +5,18 @@ import { DetalhesComponent } from './pages/detalhes/detalhes.component';
 import { ListagemComponent } from './pages/listagem/listagem.component';
 
   const routes: Routes = [
-    {path:"", component:ListagemComponent},
-    {path:"details", component: DetalhesComponent},
-    {path: "cadastro", component: CadastroComponent},
+    {
+      path:"",
+      component:ListagemComponent
+    },
+    {
+      path:"details/:id",
+      component: DetalhesComponent
+    },
+    {
+      path: "cadastro",
+      component: CadastroComponent
+    },
 ];
 
 @NgModule({
