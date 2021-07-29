@@ -1,110 +1,111 @@
-.scroll-bar {
-  width: 100vw;
+// .scroll-bar {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   justify-items: center;
+
+//   .scroll-arrow {
+//     margin: 2%;
+//     color: #ebe5e2;
+//     height: 30%;
+//     line-height: 150px;
+//     width: 50px;
+//     font-size: 100px;
+//     margin-top: 10%;
+//     cursor: pointer;
+//   }
+
+//   .scroll-arrow:hover {
+//     color: #83cfdf;
+//     transition: 0.5s ease-in-out;
+//   }
+
+//   .card-section {
+//     //transition: 0.5s ease-in-out;
+//     width: 79vw;
+//     max-width: 100%;
+//     display: flex;
+//     overflow-x: auto; //trás a scroll bar pro card-section
+//     overflow-x: hidden; //esconde a scroll bar
+//     overflow-y: hidden;
+//     white-space: nowrap;
+//     flex-direction: row;
+//     height: 500px;
+//   }
+// }
+
+.card {
+  background-color: #373b69;
+  margin: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  flex: none;
+  transition: 0.5s ease-in-out;
+  height: 450px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 5px 2px rgb(20, 20, 20);
+  transform: scale(1.1);
+}
+
+img {
+  width: 300px;
+  max-height: 400px;
+}
+
+button {
+  position: absolute;
+}
+
+.card:hover .card-info {
+  margin-top: -15%;
+  position: absolute;
+  width: 90%;
+}
+
+.card-info {
   display: flex;
-  justify-content: center;
-  justify-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  color: #ebe5e2;
+  letter-spacing: 1px;
+  height: 70px;
+  background-color: #373b69;
+  transition: 0.5s ease-in-out;
 
-  .scroll-arrow {
-    margin: 2%;
-    color: #ebe5e2;
-    height: 30%;
-    line-height: 150px;
-    width: 50px;
-    font-size: 100px;
-    margin-top: 10%;
-    cursor: pointer;
-  }
-
-  .scroll-arrow:hover {
-    color: #83cfdf;
-    transition: 0.5s ease-in-out;
-  }
-
-  .card-section {
-    //transition: 0.5s ease-in-out;
-    width: 79vw;
-    max-width: 100%;
-    display: flex;
-    overflow-x: auto; //trás a scroll bar pro card-section
-    overflow-x: hidden; //esconde a scroll bar
-    overflow-y: hidden;
-    white-space: nowrap;
-    flex-direction: row;
-    height: 500px;
-
-    .card {
-      background-color: #373b69;
-      margin: 10px;
-      border-radius: 3px;
-      overflow: hidden;
-      flex: none;
-      transition: 0.5s ease-in-out;
-      height: 450px;
-    }
-
-    .card:hover {
-      box-shadow: 1px 1px 5px 2px rgb(20, 20, 20);
-      transform: scale(1.1);
-    }
-
-    img {
-      width: 300px;
-      max-height: 400px;
-    }
-
-    button {
-      position: absolute;
-    }
-
-    .card:hover .card-info {
-      margin-top: -15%;
-      position: absolute;
-      width: 90%;
-    }
-
-    .card-info {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem 1rem 1rem;
-      color: #ebe5e2;
-      letter-spacing: 1px;
-      height: 70px;
-      background-color: #373b69;
-      transition: 0.5s ease-in-out;
-
-      h2 {
-        margin: 0;
-      }
-
-      span {
-        height: 20px;
-        font-weight: bold;
-        background-color: #1e1f33;
-        border-radius: 3px;
-        padding: 0.25rem 0.5rem;
-      }
-    }
-  }
-
-  .mais-informacoes {
-    display: none;
-    justify-content: space-between;
-
-
-    .mat-icon {
-      padding: 0rem 8rem 2rem;
-      align-items: right;
-    }
-  }
-  a {
-    color: white;
-    text-decoration:none;
-  }
-  .card:hover .mais-informacoes {
-    padding: 1rem 0rem 1rem;
-    display: flex;
+  h2 {
     margin: 0;
-    margin-top: 10%;
-    position: absolute;
   }
+
+  span {
+    height: 20px;
+    font-weight: bold;
+    background-color: #1e1f33;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.mais-informacoes {
+  display: none;
+  justify-content: space-between;
+
+  .mat-icon {
+    padding: 0rem 8rem 2rem;
+    align-items: right;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.card:hover .mais-informacoes {
+  padding: 1rem 0rem 1rem;
+  display: flex;
+  margin: 0;
+  margin-top: 10%;
+  position: absolute;
 }
