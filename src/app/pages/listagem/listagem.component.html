@@ -8,7 +8,7 @@
     </a>
   </div>
   <app-category class="lista"></app-category>
-  <div class="list-card">
+  <div class="list-card" >
     <a [routerLink]="['/details/'+card.id]" *ngFor="let card of listCards">
       <app-card [card]=card></app-card>
     </a>
