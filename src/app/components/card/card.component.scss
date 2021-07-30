@@ -40,13 +40,14 @@
   border-radius: 3px;
   overflow: hidden;
   flex: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   height: 450px;
 }
 
 .card:hover {
   box-shadow: 1px 1px 5px 2px rgb(20, 20, 20);
   transform: scale(1.1);
+   transition-delay: 0.2s;
 }
 
 img {
@@ -62,6 +63,7 @@ button {
   margin-top: -15%;
   position: absolute;
   width: 90%;
+   transition-delay: 0.2s;
 }
 
 .card-info {
@@ -72,10 +74,11 @@ button {
   letter-spacing: 1px;
   height: 70px;
   background-color: #373b69;
-  transition: 0.5s ease-in-out;
+   transition: 0.3s ease-in-out;
 
   h2 {
     margin: 0;
+
   }
 
   span {
@@ -84,6 +87,7 @@ button {
     background-color: #1e1f33;
     border-radius: 3px;
     padding: 0.25rem 0.5rem;
+
   }
 }
 
@@ -92,7 +96,7 @@ button {
   justify-content: space-between;
 
   .mat-icon {
-    padding: 0rem 8rem 2rem;
+    padding: 0rem 6rem 2rem;
     align-items: right;
   }
 

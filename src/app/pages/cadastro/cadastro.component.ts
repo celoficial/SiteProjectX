@@ -1,5 +1,6 @@
 import { getLocaleDateFormat } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { IMyDpOptions } from 'mydatepicker';
 
 @Component({
   selector: 'app-cadastro',

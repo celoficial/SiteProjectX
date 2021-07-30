@@ -1,71 +1,68 @@
 <div class="content">
   <div class="container">
-    <h2>Registre-se</h2>
-    <p>
-      <mat-form-field>
-        <mat-label>Nome</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </p>
+    <div class="form">
+      <h2>Registre-se</h2>
+      <p>
+        <mat-form-field>
+          <mat-label>Nome</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </p>
 
-    <p>
-      <mat-form-field>
-        <mat-label>Email</mat-label>
-        <input matInput type="email" />
-      </mat-form-field>
-    </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" />
+        </mat-form-field>
+      </p>
 
-    <p>
-      <mat-form-field>
-        <mat-label>Nome de usuário</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Nome de usuário</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </p>
 
-    <p>
-      <!-- <input matInput [matDatepicker]="picker" placeholder="Date"
-                  autocomplete="off"
-                  name="date" formControlName="date">
-   <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-   <mat-datepicker  [startAt]="date" #picker></mat-datepicker> -->
-    </p>
+      <p></p>
 
-    <p class="birth-text">Data de Nascimento</p>
-    <p class="birth">
-      <input type="date" id="start" value="2021-07-29" min="1900-01-01" />
+      <p class="birth-text">Data de Nascimento</p>
+      <p class="birth">
+        <input
+          type="date"
+          value="2021-07-29"
+          min="1900-01-01"
+          max="2021-07-30"
+        />
+      </p>
 
-      <!-- <mat-form-field>
-        <mat-label>Data</mat-label>
-        <input  matInput type="date" [min]="minDate" [max]="maxDate" autocomplete="off" />
-      </mat-form-field> -->
-    </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Senha</mat-label>
+          <input matInput type="password" />
+        </mat-form-field>
+      </p>
 
-    <p>
-      <mat-form-field>
-        <mat-label>Senha</mat-label>
-        <input matInput type="password" />
-      </mat-form-field>
-    </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Confirme sua senha</mat-label>
+          <input matInput type="password" />
+        </mat-form-field>
+      </p>
 
-    <p>
-      <mat-form-field>
-        <mat-label>Confirme sua senha</mat-label>
-        <input matInput type="password" />
-      </mat-form-field>
-    </p>
+      <button class="btn" mat-button>Criar Conta</button>
+    </div>
+    <div class="login">
+      <img class="logo" src="assets/img/logo2.png" alt="" />
+      <p class="text">Já possui uma conta? Faça seu <a href="">Login</a></p>
 
-    <button class="btn" mat-button>Criar Conta</button>
-
-
-    <p class="text">Já possui uma conta? Faça seu <a href="">Login</a></p>
-    
-    <br />
-    <p class="text">OU</p>
-    <button mat-button class="facebook-btn">
-      <img src="assets/img/facebook.png" alt="" /> Continue com o Facebook
-    </button>
-    <button mat-button class="google-btn">
-      <img src="assets/img/google.png" alt="" /> Continue com o Google
-    </button>
+      <br />
+      <p class="text">OU</p>
+      <button mat-button class="facebook-btn">
+        <img src="assets/img/facebook.png" alt="" /> Continue com o Facebook
+      </button>
+      <button mat-button class="google-btn">
+        <img src="assets/img/google.png" alt="" /> Continue com o Google
+      </button>
+    </div>
   </div>
 </div>
