@@ -26,7 +26,37 @@ export class ListagemComponent implements OnInit {
       id: "hfghfgh",
       thumburl: "https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg",
       rating: 5,
-    }
+    },
+    {
+      title: "Título",
+      id: "hahaha",
+      thumburl: "https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg",
+      rating: 2.5,
+    },
+    {
+      title: "Título",
+      id: "hahaha",
+      thumburl: "https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg",
+      rating: 2.5,
+    },
+    {
+      title: "Título",
+      id: "hahaha",
+      thumburl: "https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg",
+      rating: 2.5,
+    },
+    {
+      title: "Título",
+      id: "hahaha",
+      thumburl: "https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg",
+      rating: 2.5,
+    },
+    {
+      title: "Título",
+      id: "hahaha",
+      thumburl: "https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg",
+      rating: 2.5,
+    },
   ]
 
 

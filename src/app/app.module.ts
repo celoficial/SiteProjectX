@@ -16,6 +16,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 
 
@@ -40,7 +42,7 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
     MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
-
+    IvyCarouselModule
 
   ],
   providers: [

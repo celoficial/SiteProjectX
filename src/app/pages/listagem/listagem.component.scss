@@ -7,15 +7,17 @@
   background-color: #1e1f33;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  justify-items: center;
 }
 
 .list-card {
   width: 100vw;
   display: flex;
-  justify-content: center;
-  justify-items: center;
 
-  //width: 79vw;
+  margin-left: 8%;
+
+  width: 80vw;
   max-width: 100%;
   display: flex;
   overflow-x: auto; //trás a scroll bar pro card-section
@@ -23,5 +25,5 @@
   overflow-y: hidden;
   white-space: nowrap;
   flex-direction: row;
-  height: 500px;
+  //height: 500px;
 }
