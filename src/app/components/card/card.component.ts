@@ -17,6 +17,10 @@ export class CardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+
+    //intStar = ?
+    //halfstar = (rating % 1).toFixed(2).substring(2)
+    //TODO: Refact this shit
     var number = this.card.rating.toString()
 
     this.intStars = parseInt(number.split('.')[0])
