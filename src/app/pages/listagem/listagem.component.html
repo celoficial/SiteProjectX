@@ -12,13 +12,15 @@
     </carousel>
   </div>
   <app-category class="lista"></app-category>
-  <carousel [cellWidth]="300" [height]="500" [objectFit]="'cover'" [overflowCellsLimit]="3">
-    <div class="carousel-cell" *ngFor="let card of listCards">
-      <a [routerLink]="['/details/'+card.id]">
-        <app-card [card]=card></app-card>
-      </a>
-    </div>
-  </carousel>
+  <div class="list-card">
+    <carousel [cellWidth]="300" [height]="500" [objectFit]="'cover'" [overflowCellsLimit]="3">
+      <div class="carousel-cell" *ngFor="let card of listCards">
+        <a [routerLink]="['/details/'+card.id]">
+          <app-card [card]=card></app-card>
+        </a>
+      </div>
+    </carousel>
+  </div>
 </div>
 
 
