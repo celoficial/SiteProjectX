@@ -1,0 +1,29 @@
+<div class="episodio">
+  <img
+    class="thumb-episodio"
+    src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2020/03/Kaguya-sama-896x504-1.jpg"
+    alt=""
+  />
+  <div class="sinopse">
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+          <a>Episodio 1: Nome do Episodio </a>
+          <!-- Ver {{panelOpenState ? 'menos' : 'mais'}} -->
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+          possimus laudantium exercitationem voluptatem officia
+        </p>
+      </div>
+    </mat-expansion-panel>
+    <!-- <a>{{anime.temporada.episodio.episodioTitle}}</a> -->
+  </div>
+
+  
+</div>
