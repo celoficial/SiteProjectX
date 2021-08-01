@@ -1,25 +1,47 @@
 <div class="content">
   <div class="container">
-    <div class="form">
+    <form class="form" [formGroup]="cadastro">
       <h2>Registre-se</h2>
       <p>
         <mat-form-field>
           <mat-label>Nome</mat-label>
-          <input matInput />
+          <input matInput type="text" formControlName="username" />
+          <mat-error *ngIf="cadastro.invalid">Campo obrigatório</mat-error>
+          <mat-error *ngIf="cadastro.get('username')?.errors?.minlength"
+            >O nome deve conter de 3 a 50 caracteres</mat-error
+          >
+          <mat-error *ngIf="cadastro.get('username')?.errors?.maxlength"
+            >O nome deve conter de 3 a 50 caracteres</mat-error
+          >
         </mat-form-field>
       </p>
 
       <p>
         <mat-form-field>
           <mat-label>Email</mat-label>
-          <input matInput type="email" />
+          <input matInput type="email" formControlName="email" />
+          <mat-error *ngIf="cadastro.get('email')?.errors?.required"
+            >Campo obrigatório</mat-error
+          >
+          <mat-error *ngIf="cadastro.get('email')?.errors?.email"
+            >Digite um email válido</mat-error
+          >
         </mat-form-field>
       </p>
 
       <p>
         <mat-form-field>
           <mat-label>Nome de usuário</mat-label>
-          <input matInput />
+          <input matInput type="text" formControlName="usernick" />
+          <mat-error *ngIf="cadastro.get('usernick')?.errors?.required"
+            >Campo obrigatório</mat-error
+          >
+          <mat-error *ngIf="cadastro.get('usernick')?.errors?.minlength"
+            >O nome de usuário deve conter de 3 a 20 caracteres</mat-error
+          >
+          <mat-error *ngIf="cadastro.get('usernick')?.errors?.maxlength"
+            >O nome de usuário deve conter de 3 a 20 caracteres</mat-error
+          >
         </mat-form-field>
       </p>
 
@@ -32,25 +54,54 @@
           value="2021-07-29"
           min="1900-01-01"
           max="2021-07-30"
+          formControlName="birth"
         />
+        <mat-error *ngIf="cadastro.get('birth')?.errors?.required"
+          >Campo obrigatório</mat-error
+        >
       </p>
 
       <p>
         <mat-form-field>
           <mat-label>Senha</mat-label>
-          <input matInput type="password" />
+          <input matInput type="password" formControlName="password" />
+          <mat-error *ngIf="cadastro.get('password')?.errors?.required"
+            >Campo obrigatório</mat-error
+          >
+          <mat-error *ngIf="cadastro.get('password')?.errors?.minlength"
+            >Senha deve conter no mínimo 8 caracteres</mat-error
+          >
         </mat-form-field>
       </p>
 
       <p>
         <mat-form-field>
           <mat-label>Confirme sua senha</mat-label>
-          <input matInput type="password" />
+          <input matInput type="password" formControlName="confirmpassword" />
+          <mat-error *ngIf="cadastro.get('confirmpassword')?.errors?.required"
+            >Campo obrigatório</mat-error
+          >
+          <mat-error
+            *ngIf="
+              cadastro.get('confirmpassword')?.errors?.valid &&
+              cadastro.get('confirmpassword')?.value !=
+                cadastro.get('password')?.value
+            "
+            >Senhas não coincidem
+          </mat-error>
         </mat-form-field>
       </p>
 
-      <button class="btn" mat-button>Criar Conta</button>
-    </div>
+      <button
+        mat-button
+        class="btn"
+        (click)="submission()"
+        (click)="openSnackBar()"
+        [disabled]="cadastro.invalid"
+      >
+        Criar Conta
+      </button>
+    </form>
     <div class="login">
       <img class="logo" src="assets/img/logo2.png" alt="" />
       <p class="text">Já possui uma conta? Faça seu <a href="">Login</a></p>

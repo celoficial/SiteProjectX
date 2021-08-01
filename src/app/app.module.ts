@@ -13,10 +13,10 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
-
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -40,14 +40,11 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatInputModule,
     MatSelectModule,
     MatButtonModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    IvyCarouselModule
-
+    IvyCarouselModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
   ],
-  providers: [
-    {provide: MAT_DATE_LOCALE, useValue : 'en-GB'}
-  ],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

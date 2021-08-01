@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -11,9 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './card/card.component';
 import { SearchComponent } from './search/search.component';
 import { CategoryComponent } from './category/category.component';
-import { InfoComponent } from './info/info.component';
-import { SeasonsComponent } from './seasons/seasons.component';
-
+import { EpisodeComponent } from './episode/episode.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -21,8 +19,7 @@ import { SeasonsComponent } from './seasons/seasons.component';
     CardComponent,
     SearchComponent,
     CategoryComponent,
-    InfoComponent,
-    SeasonsComponent,
+    EpisodeComponent,
   ],
 
   imports: [
@@ -33,15 +30,14 @@ import { SeasonsComponent } from './seasons/seasons.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-
+    MatExpansionModule,
   ],
   exports: [
     HeaderComponent,
     CardComponent,
     SearchComponent,
     CategoryComponent,
-    InfoComponent,
-    SeasonsComponent,
+    EpisodeComponent,
   ],
 })
 export class ComponentsModule {}

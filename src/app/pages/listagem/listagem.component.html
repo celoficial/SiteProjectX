@@ -1,28 +1,33 @@
-
 <div class="content">
   <!-- <app-search class="lista"></app-search> -->
   <app-category class="lista"></app-category>
   <div class="list-card">
-    <carousel [cellWidth]="300" [height]="500" [objectFit]="'cover'" [overflowCellsLimit]="3">
+    <carousel
+      [cellWidth]="300"
+      [height]="500"
+      [objectFit]="'cover'"
+      [overflowCellsLimit]="3"
+    >
       <div class="carousel-cell" *ngFor="let card of listCards">
-        <a [routerLink]="['/details/'+card.id]">
-          <app-card [card]=card></app-card>
+        <a [routerLink]="['/details/' + card.id]">
+          <app-card [card]="card"></app-card>
         </a>
       </div>
     </carousel>
   </div>
   <app-category class="lista"></app-category>
   <div class="list-card">
-    <carousel [cellWidth]="300" [height]="500" [objectFit]="'cover'" [overflowCellsLimit]="3">
+    <carousel
+      [cellWidth]="300"
+      [height]="500"
+      [objectFit]="'cover'"
+      [overflowCellsLimit]="3"
+    >
       <div class="carousel-cell" *ngFor="let card of listCards">
-        <a [routerLink]="['/details/'+card.id]">
-          <app-card [card]=card></app-card>
+        <a [routerLink]="['/details/' + card.id]">
+          <app-card [card]="card"></app-card>
         </a>
       </div>
     </carousel>
   </div>
 </div>
-
-
-
-

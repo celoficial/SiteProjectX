@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0rem 0rem 1rem;
 
+
     input {
       height: 40px;
       width: 30%;
@@ -48,6 +49,10 @@
       border-radius: 4px;
       border: none;
 
+    }
+
+    .mat-error{
+      font-size: 12px;
     }
   }
 
