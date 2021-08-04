@@ -44,4 +44,14 @@ input{
   font-family: Roboto;
 }
 
+.arrow-expansion > .mat-expansion-indicator, .mat-expansion-indicator:after {
+  color:  white !important;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+ display: flex;
+
+}
+
+
 
