@@ -2,7 +2,7 @@ import { AnimeModel } from './../../models/animemodel';
 import { Component, OnInit } from '@angular/core';
 import { EpisodioModel } from 'src/app/models/episodiomodel';
 import { TemporadaModel } from 'src/app/models/temporadamodel';
-import { AnimeModel } from 'src/app/models/animemodel';
+
 
 @Component({
   selector: 'app-detalhes',
