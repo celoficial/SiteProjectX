@@ -59,8 +59,6 @@ export class ListagemComponent implements OnInit {
     },
   ]
 
-
-
   constructor() { }
 
   ngOnInit(): void {
