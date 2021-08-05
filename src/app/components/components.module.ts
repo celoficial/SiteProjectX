@@ -12,6 +12,7 @@ import { SearchComponent } from './search/search.component';
 import { CategoryComponent } from './category/category.component';
 import { EpisodeComponent } from './episode/episode.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatIconModule,
     MatListModule,
     MatExpansionModule,
+    MatSelectModule,
   ],
   exports: [
     HeaderComponent,

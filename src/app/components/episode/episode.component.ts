@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EpisodioModel } from 'src/app/models/episodiomodel';
+
 
 @Component({
   selector: 'app-episode',

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { EpisodioModel } from 'src/app/models/episodiomodel';
 import { TemporadaModel } from 'src/app/models/temporadamodel';
+import { AnimeModel } from 'src/app/models/animemodel';
 
 @Component({
   selector: 'app-detalhes',
@@ -8,14 +9,10 @@ import { TemporadaModel } from 'src/app/models/temporadamodel';
   styleUrls: ['./detalhes.component.scss'],
 })
 export class DetalhesComponent implements OnInit {
+   @Input() anime: AnimeModel = new AnimeModel();
   
-  listEpisodios: Array<EpisodioModel> = [
-    {
-      id: '1',
-      sinopse: 'aaaaaaa',
-      episodioTitle: "AAAAA",
-    },
-  ];
+
+
 
   constructor() {}
 

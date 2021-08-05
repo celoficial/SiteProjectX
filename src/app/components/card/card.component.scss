@@ -1,38 +1,3 @@
-// .scroll-bar {
-//   width: 100vw;
-//   display: flex;
-//   justify-content: center;
-//   justify-items: center;
-
-//   .scroll-arrow {
-//     margin: 2%;
-//     color: #ebe5e2;
-//     height: 30%;
-//     line-height: 150px;
-//     width: 50px;
-//     font-size: 100px;
-//     margin-top: 10%;
-//     cursor: pointer;
-//   }
-
-//   .scroll-arrow:hover {
-//     color: #83cfdf;
-//     transition: 0.5s ease-in-out;
-//   }
-
-//   .card-section {
-//     //transition: 0.5s ease-in-out;
-//     width: 79vw;
-//     max-width: 100%;
-//     display: flex;
-//     overflow-x: auto; //trás a scroll bar pro card-section
-//     overflow-x: hidden; //esconde a scroll bar
-//     overflow-y: hidden;
-//     white-space: nowrap;
-//     flex-direction: row;
-//     height: 500px;
-//   }
-// }
 
 .card {
   background-color: #373b69;

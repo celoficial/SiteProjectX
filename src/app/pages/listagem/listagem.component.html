@@ -7,6 +7,8 @@
       [height]="500"
       [objectFit]="'cover'"
       [overflowCellsLimit]="3"
+      [cellsToScroll]= 2
+      [transitionDuration] = 400
     >
       <div class="carousel-cell" *ngFor="let card of listCards">
         <a [routerLink]="['/details/' + card.id]">

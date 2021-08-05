@@ -1,3 +1,4 @@
+import { MinhalistaComponent } from './pages/minhalista/minhalista.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
@@ -17,6 +18,14 @@ import { ListagemComponent } from './pages/listagem/listagem.component';
       path: "cadastro",
       component: CadastroComponent
     },
+
+    {path: "minhalista",
+    component: MinhalistaComponent
+  },
+
+
+
+
 ];
 
 @NgModule({

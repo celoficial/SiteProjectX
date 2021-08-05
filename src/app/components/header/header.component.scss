@@ -6,7 +6,6 @@
   position: fixed;
   box-shadow: 0px 0px 2px 1px rgb(20, 20, 20);
   height: 80px;
-
   z-index: 999999999;
 
   span {
@@ -16,11 +15,16 @@
     font-size: 21px;
   }
 
+
+
   a {
     color: #f8f8f8;
     font-weight: 300;
     padding: 0.5rem;
+    padding-right: 1rem;
     text-decoration: none;
+
+
   }
 
   a:hover {
@@ -30,7 +34,7 @@
 
   .mat-icon {
     color: #f8f8f8;
-    margin-left: 2%;
+    margin-left: 1%;
   }
 
   .spacer {

@@ -7,7 +7,7 @@
         alt=""
       />
       <div class="description">
-        <h2>Kaguya-sama: Love is war</h2>
+        <h2>Kaguya-sama: Love is War</h2>
         <button mat-mini-fab><mat-icon>bookmark</mat-icon></button>
 
         <h5>
@@ -19,8 +19,8 @@
           quasi fugiat incidunt corrupti aperiam, alias dolore aspernatur
           distinctio quibusdam explicabo nam error vel eos voluptatibus a sed.
         </h5>
-
-        <p>Tags: Seinen, Comédia, Escolar</p>
+        <p>Gênero: Seinen, Romance</p>
+        <p>Tags: Comédia, Escolar</p>
         <p>Studio: A-1 Pictures</p>
         <p>Lançamento: 12 de janeiro de 2019</p>
         <p>Episódios: 25</p>
@@ -28,14 +28,34 @@
       </div>
     </div>
     <div class="seasons">
-      <h2>Temporadas e episódios</h2>
+      <h2 style="color: white">Temporadas e episódios</h2>
       <h1>1ª Temporada</h1>
 
-      <carousel [cellWidth]="600" [height]="200">
-        <div class="carousel-cell">
-          <app-episode></app-episode>
-        </div>
-      </carousel>
+      <div class="list-episodes">
+        <carousel [cellWidth]="240" [height]="400">
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+          <div class="carousel-cell">
+            <app-episode></app-episode>
+          </div>
+        </carousel>
+      </div>
     </div>
   </div>
 </div>

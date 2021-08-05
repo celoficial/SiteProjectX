@@ -17,6 +17,8 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MinhalistaComponent } from './pages/minhalista/minhalista.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 
@@ -27,6 +29,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ListagemComponent,
     DetalhesComponent,
     CadastroComponent,
+    MinhalistaComponent,
   ],
 
   imports: [
@@ -43,6 +46,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     IvyCarouselModule,
     ReactiveFormsModule,
     MatSnackBarModule,
+    MatTabsModule,
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }],
   bootstrap: [AppComponent],

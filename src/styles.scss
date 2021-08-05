@@ -39,19 +39,40 @@ a {
   background-color: white !important;
 }
 
-
-input{
+input {
   font-family: Roboto;
 }
 
-.arrow-expansion > .mat-expansion-indicator, .mat-expansion-indicator:after {
-  color:  white !important;
+.arrow-expansion > .mat-expansion-indicator,
+.mat-expansion-indicator:after {
+  color: white !important;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 
- display: flex;
-
+  display: flex;
 }
 
+.mat-tab-group {
+  color: white !important;
+}
+
+.mat-tab-label {
+  color: white !important;
+  font-weight: 400;
+}
+
+.mat-tab-label-active {
+  color:#83cfdf !important;
+}
+
+.mat-tab-nav-bar {
+  color: white !important;
+}
+
+.mat-ink-bar{
+    background-color: #83cfdf !important;
+    display:block;
+    height: 3px !important;
+}
 
 

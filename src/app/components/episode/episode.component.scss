@@ -1,9 +1,10 @@
 .episodio {
   width: 210px;
-  justify-content: space-between;
+  //justify-content: space-between;
   transition: 0.3s ease;
   margin-left: 5%;
   flex: none;
+   display: inline-block;
 }
 .sinopse {
   transition: 0.3s ease;
@@ -12,6 +13,7 @@
   max-height: 20px;
   border-radius: 0px 0px 2px 2px;
   //margin-left: -2%;
+
 }
 p {
   font-size: 11px;
@@ -32,9 +34,11 @@ img {
   transition-delay: 0.6s;
   transform: translateY(-30px);
   opacity: 1;
+
 }
 .episodio:hover .mat-expansion-panel {
   transition-delay: 0.6s;
+   box-shadow: 1px 1px 3px 1px rgb(20, 20, 20);
 }
 
 .mat-expansion-panel {
@@ -45,6 +49,7 @@ img {
   transition: 0.3s ease;
 
 
+
   .mat-expansion-panel-header {
     padding-left: 0.5rem;
     padding-right: 0.2rem;
@@ -53,9 +58,7 @@ img {
   a {
     font-size: 13px;
     color: #83cfdf;
-    //color: white;
-    // text-align: left;
-  //  background-color: red;
+
     justify-content: space-between;
 
 
@@ -68,6 +71,8 @@ img {
     padding-right: 0;
     margin-left: -10px;
      padding-bottom: 0;
+     display: block;
+     flex: none;
   }
 
 
