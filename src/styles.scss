@@ -75,4 +75,16 @@ input {
     height: 3px !important;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    overflow-y: scroll;
+    background: #1e1f33;
+    box-shadow: inset 1 0 4px #707070;
+}
+
+::-webkit-scrollbar-thumb {
+    background:grey;
+    border-radius: 10px;
+}
+
 

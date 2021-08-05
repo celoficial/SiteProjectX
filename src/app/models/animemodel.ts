@@ -12,4 +12,5 @@ export class AnimeModel {
   tags?: Array<TagModel> = new Array<TagModel>();
   studios?: Array<StudioModel> = new Array<StudioModel>();
   lancamento: Date = new Date();
+  categoria: string ='';
 }

@@ -1,32 +1,47 @@
 <div class="content">
   <div class="container">
     <div class="anime-info">
-      <img
-        class="img-description"
-        src="{{detalhe.imgUrl}}"
-        alt=""
-      />
+      <img class="img-description" src="{{ detalhe.imgUrl }}" alt="" />
       <div class="description">
-        <h2>{{detalhe.animeTitle}}</h2>
+        <h2>{{ detalhe.animeTitle }}</h2>
+
+        <h5>Sinopse: {{ detalhe.description }}</h5>
+
+        <p>
+          Tags:
+          <mat-chip-list>
+            <mat-chip
+              *ngFor="let tag of detalhe.tags"
+              [ngStyle]="{
+                color: 'white',
+                backgroundColor:
+                tag.titulo === 'Seinen' ? 'grey' : 'purple'}">
+              {{ tag.titulo }}
+            </mat-chip>
+          </mat-chip-list>
+        </p>
+
+        <p>
+          Studio:
+          <span *ngFor="let studio of detalhe.studios">{{ studio.nome }}</span>
+        </p>
+        <p>Lançamento: {{ detalhe.lancamento | date: "dd/MM/yyyy" }}</p>
+        <p>Episódios: {{ this.episodios }}</p>
+        <p>Temporadas: {{ this.temporadas }}</p>
+
         <button mat-mini-fab><mat-icon>bookmark</mat-icon></button>
 
-        <h5>
-          Sinopse: {{detalhe.description}}
-        </h5>
-
-        <p>Tags: <span *ngFor="let tag of detalhe.tags">{{tag.titulo}}</span></p>
-        <p>Studio: <span *ngFor="let studio of detalhe.studios">{{studio.nome}}</span></p>
-        <p>Lançamento: {{detalhe.lancamento}}</p>
-        <p>Episódios: {{this.episodios}}</p>
-        <p>Temporadas: {{this.temporadas}}</p>
       </div>
     </div>
     <div class="seasons">
       <h2>Temporadas e episódios</h2>
       <div *ngFor="let temporada of detalhe.temporadas; let i = index">
-        <h1>Temporada {{i+1}}</h1>
-        <carousel [cellWidth]="250" [height]="200">
-          <div class="carousel-cell" *ngFor="let episodio of temporada.episodios">
+        <h1>Temporada {{ i + 1 }}</h1>
+        <carousel class="carousel" [cellWidth]="210" [height]="280"  [cellsToScroll]=2>
+          <div
+            class="carousel-cell"
+            *ngFor="let episodio of temporada.episodios"
+          >
             <app-episode [episodio]="episodio"></app-episode>
           </div>
         </carousel>
