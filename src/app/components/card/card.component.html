@@ -6,8 +6,11 @@
 
   <div class="card-info">
     <h2>{{card.title}}</h2>
-   
-    <span>{{card.rating}}</span>
+
+    <span [ngStyle]="{
+
+                color: getColor()
+               }">{{card.rating}}</span>
 
     <!-- Apenas para fins visuais -->
     <div class="rating">
