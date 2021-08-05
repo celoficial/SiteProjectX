@@ -3,56 +3,31 @@
     <div class="anime-info">
       <img
         class="img-description"
-        src="https://alternativanerd.com.br/wp-content/uploads/2020/03/Kaguya1.jpg"
+        src="{{detalhe.imgUrl}}"
         alt=""
       />
       <div class="description">
-        <h2>Kaguya-sama: Love is War</h2>
+        <h2>{{detalhe.animeTitle}}</h2>
         <button mat-mini-fab><mat-icon>bookmark</mat-icon></button>
 
         <h5>
-          Sinopse: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Perferendis, hic. Enim sed officiis ipsum voluptatibus ad laudantium
-          doloribus vitae. Deserunt at consequatur accusamus. Reprehenderit
-          facilis dignissimos eligendi laborum, vitae dolorem? Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Porro, ipsum reiciendis illo
-          quasi fugiat incidunt corrupti aperiam, alias dolore aspernatur
-          distinctio quibusdam explicabo nam error vel eos voluptatibus a sed.
+          Sinopse: {{detalhe.description}}
         </h5>
-        <p>Gênero: Seinen, Romance</p>
-        <p>Tags: Comédia, Escolar</p>
-        <p>Studio: A-1 Pictures</p>
-        <p>Lançamento: 12 de janeiro de 2019</p>
-        <p>Episódios: 25</p>
-        <p>Temporadas: 3</p>
+
+        <p>Tags: <span *ngFor="let tag of detalhe.tags">{{tag.titulo}}</span></p>
+        <p>Studio: <span *ngFor="let studio of detalhe.studios">{{studio.nome}}</span></p>
+        <p>Lançamento: {{detalhe.lancamento}}</p>
+        <p>Episódios: {{this.episodios}}</p>
+        <p>Temporadas: {{this.temporadas}}</p>
       </div>
     </div>
     <div class="seasons">
-      <h2 style="color: white">Temporadas e episódios</h2>
-      <h1>1ª Temporada</h1>
-
-      <div class="list-episodes">
-        <carousel [cellWidth]="240" [height]="400">
-          <div class="carousel-cell">
-            <app-episode></app-episode>
-          </div>
-          <div class="carousel-cell">
-            <app-episode></app-episode>
-          </div>
-          <div class="carousel-cell">
-            <app-episode></app-episode>
-          </div>
-          <div class="carousel-cell">
-            <app-episode></app-episode>
-          </div>
-          <div class="carousel-cell">
-            <app-episode></app-episode>
-          </div>
-          <div class="carousel-cell">
-            <app-episode></app-episode>
-          </div>
-          <div class="carousel-cell">
-            <app-episode></app-episode>
+      <h2>Temporadas e episódios</h2>
+      <div *ngFor="let temporada of detalhe.temporadas; let i = index">
+        <h1>Temporada {{i+1}}</h1>
+        <carousel [cellWidth]="250" [height]="200">
+          <div class="carousel-cell" *ngFor="let episodio of temporada.episodios">
+            <app-episode [episodio]="episodio"></app-episode>
           </div>
         </carousel>
       </div>

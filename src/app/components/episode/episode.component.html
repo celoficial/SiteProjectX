@@ -1,7 +1,7 @@
 <div class="episodio">
   <img
     class="thumb-episodio"
-    src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2020/03/Kaguya-sama-896x504-1.jpg"
+    src="{{episodio.thumbUrl}}"
     alt=""
   />
   <div class="sinopse">
@@ -11,16 +11,15 @@
     >
       <mat-expansion-panel-header class="arrow-expansion">
         <mat-panel-description>
-         
-          <a>Ep 1: Eu vou te fazer me convidar pra ver um filme</a>
+
+          <a>Ep {{episodio.num}}: {{episodio.episodioTitle}}</a>
 
           <!-- Ver {{panelOpenState ? 'menos' : 'mais'}} -->
         </mat-panel-description>
       </mat-expansion-panel-header>
       <div class="text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-          possimus laudantium exercitationem voluptatem officia
+          {{episodio.sinopse}}
         </p>
       </div>
     </mat-expansion-panel>

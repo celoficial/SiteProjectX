@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EpisodioModel } from 'src/app/models/episodiomodel';
 
 
@@ -15,6 +15,7 @@ import { EpisodioModel } from 'src/app/models/episodiomodel';
   ],
 })
 export class EpisodeComponent implements OnInit {
+  @Input() episodio: EpisodioModel = new EpisodioModel();
   panelOpenState = false;
   constructor() {}
 

@@ -33,6 +33,10 @@ export class CadastroComponent implements OnInit {
     confirmpassword: new FormControl('', Validators.required),
   });
 
+  constructor(private snackBar: MatSnackBar) {}
+
+  ngOnInit() {}
+
   openSnackBar() {
     this.snackBar.open('Conta criada com sucesso!','OK' ,{duration:3000});
   }
@@ -41,8 +45,4 @@ export class CadastroComponent implements OnInit {
     console.log(this.cadastro.value);
     this.cadastro.reset();
   }
-
-  constructor(private snackBar: MatSnackBar) {}
-
-  ngOnInit() {}
 }
