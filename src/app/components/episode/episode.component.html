@@ -12,7 +12,8 @@
       <mat-expansion-panel-header class="arrow-expansion">
         <mat-panel-description>
 
-          <a>Ep {{episodio.num}}: {{episodio.episodioTitle}}</a>
+          <a mat-raised #tooltip="matTooltip"
+          matTooltip="Ep {{episodio.num}}: {{episodio.episodioTitle}}">Ep {{episodio.num}}: {{episodio.episodioTitle}}</a>
 
           <!-- Ver {{panelOpenState ? 'menos' : 'mais'}} -->
         </mat-panel-description>

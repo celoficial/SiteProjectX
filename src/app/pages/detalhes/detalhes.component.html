@@ -12,10 +12,8 @@
           <mat-chip-list>
             <mat-chip
               *ngFor="let tag of detalhe.tags"
-              [ngStyle]="{
-                color: 'white',
-                backgroundColor:
-                tag.titulo === 'Seinen' ? 'grey' : 'purple'}">
+              [ngClass]="getClass(tag.id)"
+            >
               {{ tag.titulo }}
             </mat-chip>
           </mat-chip-list>
@@ -29,15 +27,26 @@
         <p>Episódios: {{ this.episodios }}</p>
         <p>Temporadas: {{ this.temporadas }}</p>
 
-        <button mat-mini-fab><mat-icon>bookmark</mat-icon></button>
-
+        <button
+          mat-raised-button
+          #tooltip="matTooltip"
+          matTooltip="Adicionar à Minha lista"
+          mat-mini-fab
+        >
+          <mat-icon>bookmark</mat-icon>
+        </button>
       </div>
     </div>
     <div class="seasons">
       <h2>Temporadas e episódios</h2>
       <div *ngFor="let temporada of detalhe.temporadas; let i = index">
         <h1>Temporada {{ i + 1 }}</h1>
-        <carousel class="carousel" [cellWidth]="210" [height]="280"  [cellsToScroll]=2>
+        <carousel
+          class="carousel"
+          [cellWidth]="210"
+          [height]="280"
+          [cellsToScroll]="2"
+        >
           <div
             class="carousel-cell"
             *ngFor="let episodio of temporada.episodios"

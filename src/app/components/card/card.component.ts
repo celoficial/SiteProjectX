@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { CardModel } from 'src/app/models/cardmodel';
+import { CardModel } from 'src/app/models/cardModel';
 
 @Component({
   selector: 'app-card',
@@ -11,7 +11,7 @@ export class CardComponent implements OnInit {
   @Input() card: CardModel = new CardModel();
 
   array: Array<string> = new Array<string>(5);
-  fullStar = 0;
+  fullStar = 0.0;
   halfStar = '';
 
   constructor() {}
@@ -21,6 +21,7 @@ export class CardComponent implements OnInit {
     //halfstar = (rating % 1).toFixed(2).substring(2)
     //TODO: Refact this shit
     // var number = this.card.rating.toString();
+
     var rating = this.card.rating;
     this.fullStar = Math.trunc(rating);
     this.halfStar = (rating % 1).toFixed(2).substring(1);
@@ -37,18 +38,21 @@ export class CardComponent implements OnInit {
     }
 
     for (let index = 0; index < this.fullStar; index++) {
+
       this.array[index] = 'star';
     }
+
+
   }
 
   getColor() {
-    if (this.card.rating > 3) {
-      return '#9ACD32';
+    if (this.card.rating > 3.5) {
+      return 'Good';
     } else {
       if (this.card.rating < 2.5) {
-        return '#FF6347';
+        return 'Bad';
       }
-      return '#FF8C00';
+      return 'Neutral';
     }
   }
 }

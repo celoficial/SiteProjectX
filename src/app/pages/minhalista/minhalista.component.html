@@ -4,7 +4,9 @@
 
     <mat-tab-group>
       <mat-tab label="Assistir">
-        <div class="list-card"></div>
+        <div class="list-card" *ngFor="let card of listCards">
+          <app-card class="card" [card] = "card"></app-card>
+        </div>
       </mat-tab>
 
       <mat-tab label=""> </mat-tab>

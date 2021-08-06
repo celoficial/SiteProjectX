@@ -20,6 +20,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MinhalistaComponent } from './pages/minhalista/minhalista.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 
@@ -49,6 +50,7 @@ import { MatChipsModule } from '@angular/material/chips';
     MatSnackBarModule,
     MatTabsModule,
     MatChipsModule,
+    MatTooltipModule,
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }],
   bootstrap: [AppComponent],

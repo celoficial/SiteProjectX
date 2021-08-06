@@ -1,4 +1,4 @@
-import { AnimeModel } from './../../models/animemodel';
+import { AnimeModel } from './../../models/animeModel';
 import { Component, OnInit } from '@angular/core';
 import { MatChipsModule } from '@angular/material/chips';
 import { taggedTemplate } from '@angular/compiler/src/output/output_ast';
@@ -30,7 +30,8 @@ export class DetalhesComponent implements OnInit {
           id: 'asdasdasd',
           episodios: [
             {
-              episodioTitle: 'Overdrive',
+              episodioTitle:
+                'Overdrive Overdrive Overdrive Overdrive Overdrive',
               id: 'asdasdasd',
               num: 1,
               sinopse:
@@ -124,12 +125,12 @@ export class DetalhesComponent implements OnInit {
           titulo: 'Seinen',
         },
         {
-          id: 'asdasdasdasd',
+          id: 'fgfgfgffg',
           titulo: 'Comédia',
         },
         {
-          id: 'asdasdasdasd',
-          titulo: 'Escolar',
+          id: 'bvbvbvb',
+          titulo: 'Sobrenatural',
         },
       ],
       studios: [
@@ -149,4 +150,27 @@ export class DetalhesComponent implements OnInit {
       });
     });
   }
+
+  getClass(id: string) :string{
+    switch (id) {
+      case 'asdasdasdasd':
+        return 'Seinen';
+        break;
+
+      case 'fgfgfgffg':
+        return 'Comedia';
+        break;
+
+      case 'bvbvbvb':
+        return 'Sobrenatural';
+        break;
+
+      default:
+        return '';
+        break;
+    }
+
+  }
 }
+
+

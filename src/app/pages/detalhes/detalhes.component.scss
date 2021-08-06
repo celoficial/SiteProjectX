@@ -18,7 +18,7 @@
 }
 
 .mat-chip{
- 
+
   font-weight: 400;
 }
 
@@ -80,6 +80,7 @@ h2 {
   margin-top: 50px;
   margin-left: 1%;
 
+
   h1 {
     color: #83cfdf;
     padding: 2rem 3rem 0rem;
@@ -93,9 +94,31 @@ h2 {
 .carousel-cell {
   width: 210px;
   transition: 0.3s ease;
+   cursor: auto;
 
 }
 
 .carousel-cell:hover {
   transition-delay: 0.4s;
+}
+
+.mat-chip{
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  
+}
+
+.Seinen{
+  background-color: #696969;
+
+}
+
+.Comedia{
+background-color: #6495ED;
+}
+
+.Sobrenatural{
+  background-color: #8B0000;
+
 }

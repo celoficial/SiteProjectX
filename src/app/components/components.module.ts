@@ -9,17 +9,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './card/card.component';
 import { SearchComponent } from './search/search.component';
-import { CategoryComponent } from './category/category.component';
+
 import { EpisodeComponent } from './episode/episode.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     CardComponent,
     SearchComponent,
-    CategoryComponent,
     EpisodeComponent,
   ],
 
@@ -33,13 +33,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatListModule,
     MatExpansionModule,
     MatSelectModule,
+    MatTooltipModule,
   ],
-  exports: [
-    HeaderComponent,
-    CardComponent,
-    SearchComponent,
-    CategoryComponent,
-    EpisodeComponent,
-  ],
+  exports: [HeaderComponent, CardComponent, SearchComponent, EpisodeComponent],
 })
 export class ComponentsModule {}

@@ -9,18 +9,38 @@
   padding: 0;
   justify-content: center;
   justify-items: center;
+  display: flex;
+  
+  .category {
+    margin-left: 4%;
+    margin-top: 5%;
+    background-color: #1e1f33;
+    width: 100vw;
+  }
 }
 
 .list-card {
-  width: 100vw;
-  margin-left: 4%;
   width: 90vw;
   max-width: 100%;
   display: flex;
-  overflow-x: auto; //trás a scroll bar pro card-section
-  overflow-x: hidden; //esconde a scroll bar
-  overflow-y: hidden;
   white-space: nowrap;
   flex-direction: row;
-  //height: 500px;
+}
+
+.category-name {
+  display: flex;
+  align-items: center;
+  color: #83cfdf;
+  margin-top: 5%;
+  font-weight: 400;
+
+  h2 {
+    margin: 10px;
+  }
+
+  a {
+    color: #83cfdf;
+    letter-spacing: 1px;
+    justify-content: center;
+  }
 }

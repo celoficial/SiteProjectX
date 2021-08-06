@@ -1,20 +1,15 @@
 <div class="card">
-  <img
-    src="{{card.thumburl}}"
-    alt=""
-  />
+  <img src="{{ card.thumburl }}" alt="" />
 
   <div class="card-info">
-    <h2>{{card.title}}</h2>
+    <h2>{{ card.title }}</h2>
 
-    <span [ngStyle]="{
 
-                color: getColor()
-               }">{{card.rating}}</span>
+    <span [ngClass] = "getColor()">{{ card.rating.toPrecision(2)}}</span>
 
-    <!-- Apenas para fins visuais -->
+
     <div class="rating">
-      <mat-icon *ngFor="let ratting of array">{{ratting}}</mat-icon>
+      <mat-icon *ngFor="let ratting of array">{{ ratting }}</mat-icon>
     </div>
 
     <div class="mais-informacoes">
@@ -23,4 +18,3 @@
     </div>
   </div>
 </div>
-

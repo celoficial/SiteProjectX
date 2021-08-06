@@ -1,12 +1,13 @@
 .card {
   background-color: #373b69;
-  margin: 10px;
+  //margin: 10px;
   border-radius: 3px;
   overflow: hidden;
   flex: none;
   transition: 0.3s ease-in-out;
   height: 450px;
    box-shadow: 1px 1px 5px 1px rgb(20, 20, 20);
+   width: 280px;
 }
 
 .card:hover {
@@ -44,6 +45,7 @@ button {
 
   h2 {
     margin: 0;
+     
   }
 
   span {
@@ -52,21 +54,25 @@ button {
     background-color: #1e1f33;
     border-radius: 3px;
     padding: 0.25rem 0.5rem;
+     transition: 0.3s ease-in-out;
   }
 }
 
 .mais-informacoes {
   display: none;
   justify-content: space-between;
+   transition: 0.3s ease-in-out;
 
   .mat-icon {
     padding: 0rem 6rem 2rem;
     align-items: right;
+     transition: 0.3s ease-in-out;
   }
 
   .moreInfo {
     color: white;
     text-decoration: none;
+     transition: 0.3s ease-in-out;
   }
 }
 
@@ -76,4 +82,19 @@ button {
   margin: 0;
   margin-top: 10%;
   position: absolute;
+transition: 0.3s ease-in-out;
+
+}
+
+.Good{
+  color: #9ACD32;
+}
+
+.Bad{
+  color: #FF6347;
+}
+
+.Neutral{
+  color: #FF8C00;
+
 }
