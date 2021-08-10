@@ -23,11 +23,6 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import {SocialAuthServiceConfig} from 'angularx-social-login';
-import { SocialLoginModule, GoogleLoginProvider } from 'angularx-social-login';
-
-
-
 
 @NgModule({
   declarations: [
@@ -57,25 +52,8 @@ import { SocialLoginModule, GoogleLoginProvider } from 'angularx-social-login';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
-    SocialLoginModule,
   ],
-  providers: [
-    { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
-    {
-      provide: 'SocialAuthServiceConfig',
-      useValue: {
-        autoLogin: false,
-        providers: [
-          {
-            id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider(
-              '958254564186-epltgprgs5ec2ai3pjp9p3pmu2lu22cj.apps.googleusercontent.com'
-            ),
-          },
-        ],
-      } as SocialAuthServiceConfig,
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

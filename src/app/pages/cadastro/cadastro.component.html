@@ -21,9 +21,11 @@
           <mat-label>Email</mat-label>
           <input matInput type="email" formControlName="email" />
           <mat-error *ngIf="cadastro.get('email')?.errors?.required"
-            >Campo obrigatório</mat-error>
+            >Campo obrigatório</mat-error
+          >
           <mat-error *ngIf="cadastro.get('email')?.errors?.email"
-            >Digite um email válido</mat-error>
+            >Digite um email válido</mat-error
+          >
         </mat-form-field>
       </p>
 
@@ -75,12 +77,7 @@
       <p>
         <mat-form-field>
           <mat-label>Confirme sua senha</mat-label>
-          <input
-            matInput
-            type="password"
-            (change)="confirmPassword()"
-            formControlName="confirmpassword"
-          />
+          <input matInput type="password" formControlName="confirmpassword" />
           <!-- <mat-error *ngIf="cadastro.get('confirmpassword')?.errors?.required"
             >Campo obrigatório</mat-error> -->
           <mat-error *ngIf="!valid">Senhas não coincidem</mat-error>
@@ -104,19 +101,18 @@
       <br />
       <p class="text">OU</p>
 
-
       <button mat-button class="facebook-btn">
         <img src="assets/img/facebook.png" alt="" /> Continue com o Facebook
       </button>
       <button mat-button class="google-btn">
         <img src="assets/img/google.png" alt="" /> Continue com o Google
       </button>
-       <button mat-button>
+      <button mat-button>
         <div
           class="g-signin2"
           data-onsucess="onSignIn"
-          data-longtitle="true">
-        </div>
+          data-longtitle="true"
+        ></div>
       </button>
     </div>
   </div>

@@ -1,14 +1,8 @@
-import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 
-import {
-  FormControl,
-  FormGroup,
-  Validators,
-  FormBuilder,
-  AbstractControl,
-} from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { ConfirmPasswordValidator } from 'src/app/shared/confirm-password.validator';
 
 @Component({
   selector: 'app-cadastro',
@@ -16,24 +10,29 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./cadastro.component.scss'],
 })
 export class CadastroComponent implements OnInit {
-  cadastro = new FormGroup({
-    username: new FormControl('', [
-      Validators.minLength(3),
-      Validators.maxLength(50),
-    ]),
-    email: new FormControl(null, [Validators.required, Validators.email]),
-    usernick: new FormControl('', [
-      Validators.required,
-      Validators.minLength(3),
-      Validators.maxLength(20),
-    ]),
-    birth: new FormControl('', Validators.required),
-    password: new FormControl('', [
-      Validators.required,
-      Validators.minLength(8),
-    ]),
-    confirmpassword: new FormControl('', [Validators.required]),
-  });
+  cadastro = new FormGroup(
+    {
+      username: new FormControl('', [
+        Validators.minLength(3),
+        Validators.maxLength(50),
+      ]),
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      usernick: new FormControl('', [
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(20),
+      ]),
+      birth: new FormControl('', Validators.required),
+      password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(8),
+      ]),
+      confirmpassword: new FormControl('', [Validators.required]),
+    },
+    {
+      validators: [ConfirmPasswordValidator('password', 'confirmpassword')],
+    }
+  );
 
   constructor(private snackBar: MatSnackBar) {}
 
@@ -51,13 +50,5 @@ export class CadastroComponent implements OnInit {
   submission() {
     console.log(this.cadastro.value);
     this.cadastro.reset();
-  }
-
-  confirmPassword() {
-    if (
-      this.cadastro.get('confirmpassword')?.value === this.cadastro.get('password')?.value) {
-      this.valid = true;
-    }
-    console.log(`${this.valid}`);
   }
 }
