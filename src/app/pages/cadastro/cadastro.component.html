@@ -21,11 +21,9 @@
           <mat-label>Email</mat-label>
           <input matInput type="email" formControlName="email" />
           <mat-error *ngIf="cadastro.get('email')?.errors?.required"
-            >Campo obrigatório</mat-error
-          >
+            >Campo obrigatório</mat-error>
           <mat-error *ngIf="cadastro.get('email')?.errors?.email"
-            >Digite um email válido</mat-error
-          >
+            >Digite um email válido</mat-error>
         </mat-form-field>
       </p>
 
@@ -53,7 +51,7 @@
           type="date"
           value="2021-07-29"
           min="1900-01-01"
-          max="2021-07-30"
+          max="2021-08-10"
           formControlName="birth"
         />
         <mat-error *ngIf="cadastro.get('birth')?.errors?.required"
@@ -77,13 +75,15 @@
       <p>
         <mat-form-field>
           <mat-label>Confirme sua senha</mat-label>
-          <input matInput type="password" formControlName="confirmpassword" />
-          <mat-error *ngIf="cadastro.get('confirmpassword')?.errors?.required"
-            >Campo obrigatório</mat-error
-          >
-          <mat-error *ngIf="cadastro.get('confirmpassword')?.value !=cadastro.get('password')?.value"
-            >Senhas não coincidem
-          </mat-error>
+          <input
+            matInput
+            type="password"
+            (change)="confirmPassword()"
+            formControlName="confirmpassword"
+          />
+          <!-- <mat-error *ngIf="cadastro.get('confirmpassword')?.errors?.required"
+            >Campo obrigatório</mat-error> -->
+          <mat-error *ngIf="!valid">Senhas não coincidem</mat-error>
         </mat-form-field>
       </p>
 
@@ -92,8 +92,7 @@
         class="btn"
         (click)="submission()"
         (click)="openSnackBar()"
-        [disabled] = 'cadastro.invalid'
-
+        [disabled]="cadastro.invalid"
       >
         Criar Conta
       </button>
@@ -104,14 +103,21 @@
 
       <br />
       <p class="text">OU</p>
+
+
       <button mat-button class="facebook-btn">
         <img src="assets/img/facebook.png" alt="" /> Continue com o Facebook
       </button>
       <button mat-button class="google-btn">
         <img src="assets/img/google.png" alt="" /> Continue com o Google
       </button>
+       <button mat-button>
+        <div
+          class="g-signin2"
+          data-onsucess="onSignIn"
+          data-longtitle="true">
+        </div>
+      </button>
     </div>
   </div>
 </div>
-
-

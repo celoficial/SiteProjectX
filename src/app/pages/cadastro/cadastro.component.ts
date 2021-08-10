@@ -1,10 +1,12 @@
 import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
+
 import {
   FormControl,
   FormGroup,
   Validators,
   FormBuilder,
+  AbstractControl,
 } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -30,13 +32,13 @@ export class CadastroComponent implements OnInit {
       Validators.required,
       Validators.minLength(8),
     ]),
-    confirmpassword: new FormControl('', Validators.required),
+    confirmpassword: new FormControl('', [Validators.required]),
   });
 
   constructor(private snackBar: MatSnackBar) {}
 
   ngOnInit() {}
-
+  valid = false;
   status = true;
 
   openSnackBar() {
@@ -48,6 +50,14 @@ export class CadastroComponent implements OnInit {
 
   submission() {
     console.log(this.cadastro.value);
-    //  this.cadastro.reset();
+    this.cadastro.reset();
+  }
+
+  confirmPassword() {
+    if (
+      this.cadastro.get('confirmpassword')?.value === this.cadastro.get('password')?.value) {
+      this.valid = true;
+    }
+    console.log(`${this.valid}`);
   }
 }
