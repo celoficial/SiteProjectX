@@ -37,12 +37,17 @@ export class CadastroComponent implements OnInit {
 
   ngOnInit() {}
 
+  status = true;
+
   openSnackBar() {
-    this.snackBar.open('Conta criada com sucesso!','OK' ,{duration:3000});
+    this.snackBar.open('Conta criada com sucesso!', 'OK', {
+      duration: 3000,
+      panelClass: 'snack-bar',
+    });
   }
 
   submission() {
     console.log(this.cadastro.value);
-    this.cadastro.reset();
+    //  this.cadastro.reset();
   }
 }

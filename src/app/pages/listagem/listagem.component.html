@@ -15,9 +15,9 @@
         [transitionDuration]="400"
       >
         <div class="carousel-cell" *ngFor="let card of listCards">
-          <a [routerLink]="['/details/' + card.id]">
+          <!-- <a [routerLink]="['/details/' + card.id]"> -->
             <app-card [card]="card"></app-card>
-          </a>
+          <!-- </a> -->
         </div>
       </carousel>
     </div>

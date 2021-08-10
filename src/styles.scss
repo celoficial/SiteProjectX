@@ -35,6 +35,8 @@ a {
   color: white !important;
 }
 
+
+
 .mat-label {
   background-color: white !important;
 }
@@ -42,6 +44,13 @@ a {
 input {
   font-family: Roboto;
 }
+
+.arrow-select > .mat-select-indicator,
+.mat-select-indicator:after {
+  color: white !important;
+ 
+}
+
 
 .arrow-expansion > .mat-expansion-indicator,
 .mat-expansion-indicator:after {
@@ -52,7 +61,17 @@ input {
   display: flex;
 }
 
+.mat-paginator-icon{
+  color: #83cfdf;
+}
 
+.mat-select-value {
+  color: white;
+}
+
+.mat-form-field-type-mat-select .mat-form-field-label {
+  color: white;
+}
 
 .mat-tab-group {
   color: white !important;
@@ -62,31 +81,52 @@ input {
   color: white !important;
   font-weight: 400;
 }
+.mat-select {
+  color: white !important;
+}
+.mat-form-field-type-mat-select {
+  color: white;
+}
 
+.mat-label {
+  color: white !important;
+}
 .mat-tab-label-active {
-  color:#83cfdf !important;
+  color: #83cfdf !important;
 }
 
 .mat-tab-nav-bar {
   color: white !important;
 }
 
-.mat-ink-bar{
-    background-color: #83cfdf !important;
-    display:block;
-    height: 3px !important;
+.mat-ink-bar {
+  background-color: #8d9496 !important;
+  display: block;
+  height: 3px !important;
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
-    overflow-y: scroll;
-    background: #1e1f33;
-    box-shadow: inset 1 0 4px #707070;
+  width: 4px;
+  overflow-y: scroll;
+  background: #1e1f33;
+  box-shadow: inset 1 0 4px #707070;
 }
 
 ::-webkit-scrollbar-thumb {
-    background:grey;
-    border-radius: 10px;
+  background: grey;
+  border-radius: 10px;
 }
 
+.mat-paginator {
+  background-color: #1e1f33 !important;
+  color: white !important;
+}
 
+.snack-bar {
+  background-color: #292847 !important;
+  font-weight: 500;
+}
+
+.mat-button-wrapper {
+  color: white !important; // action text color
+}

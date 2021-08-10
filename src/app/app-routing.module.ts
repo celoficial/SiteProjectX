@@ -11,7 +11,7 @@ import { ListagemComponent } from './pages/listagem/listagem.component';
       component:ListagemComponent
     },
     {
-      path:"details/:id",
+      path:"details",
       component: DetalhesComponent
     },
     {

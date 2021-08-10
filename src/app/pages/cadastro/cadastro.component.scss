@@ -41,17 +41,15 @@
     margin: 0;
     padding: 0rem 0rem 1rem;
 
-
     input {
       height: 40px;
       width: 30%;
       padding-left: 5px;
       border-radius: 4px;
       border: none;
-
     }
 
-    .mat-error{
+    .mat-error {
       font-size: 12px;
     }
   }
@@ -91,9 +89,8 @@
     justify-content: center;
   }
 
-  .btn:hover {
-    background-color: #527cdf;
-    transition: 0.4s ease-in-out;
+  .btn:disabled {
+    background-color: #696969;
   }
 
   h2 {
@@ -114,4 +111,7 @@
     text-align: center;
     padding: 1rem 0rem 0rem;
   }
+
+
 }
+

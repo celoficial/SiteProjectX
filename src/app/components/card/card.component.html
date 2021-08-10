@@ -4,17 +4,23 @@
   <div class="card-info">
     <h2>{{ card.title }}</h2>
 
-
-    <span [ngClass] = "getColor()">{{ card.rating.toPrecision(2)}}</span>
-
+    <span [ngClass]="getColor()">{{ card.rating.toPrecision(2) }}</span>
 
     <div class="rating">
       <mat-icon *ngFor="let ratting of array">{{ ratting }}</mat-icon>
     </div>
 
     <div class="mais-informacoes">
-      <div class="moreInfo">Mais informações</div>
-      <mat-icon>bookmark</mat-icon>
-    </div>
+      <a href="details" class="moreInfo">Mais informações
+        </a>
+        <mat-icon (click)="AddItem()"
+        [ngClass]="{ add: toggle, remove: !toggle }"
+        mat-raised-button
+
+        #tooltip="matTooltip"
+        matTooltip="{{ status }}"
+        mat-mini-fab>bookmark</mat-icon>
+      </div>
+
   </div>
 </div>

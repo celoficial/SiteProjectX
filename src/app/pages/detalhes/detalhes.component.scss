@@ -17,24 +17,21 @@
   }
 }
 
-.mat-chip{
-
+.mat-chip {
   font-weight: 400;
 }
 
 .mat-mini-fab {
-  color: white;
+  //color: white;
   cursor: pointer;
-  background-color: #708ed2;
+  // background-color: #708ed2;
   box-shadow: none;
   align-items: center;
   display: inline;
   justify-content: center;
-
 }
 
 .mat-mini-fab:hover {
-  background-color: #527cdf;
   transition: 0.4s ease-in-out;
 }
 
@@ -80,7 +77,6 @@ h2 {
   margin-top: 50px;
   margin-left: 1%;
 
-
   h1 {
     color: #83cfdf;
     padding: 2rem 3rem 0rem;
@@ -94,31 +90,38 @@ h2 {
 .carousel-cell {
   width: 210px;
   transition: 0.3s ease;
-   cursor: auto;
-
+  cursor: auto;
 }
 
 .carousel-cell:hover {
   transition-delay: 0.4s;
 }
 
-.mat-chip{
+.mat-chip {
   color: white;
   cursor: pointer;
   font-size: 13px;
-  
 }
 
-.Seinen{
+.Seinen {
   background-color: #696969;
-
 }
 
-.Comedia{
-background-color: #6495ED;
+.Comedia {
+  background-color: #6495ed;
 }
 
-.Sobrenatural{
-  background-color: #8B0000;
+.Sobrenatural {
+  background-color: #8b0000;
+}
 
+.add {
+  color: white;
+
+  background-color: #708ed2;
+}
+
+.remove {
+  //color: #292847;
+  background-color: #292847;
 }

@@ -1,7 +1,6 @@
 import { AnimeModel } from './../../models/animeModel';
 import { Component, OnInit } from '@angular/core';
-import { MatChipsModule } from '@angular/material/chips';
-import { taggedTemplate } from '@angular/compiler/src/output/output_ast';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-detalhes',
@@ -151,7 +150,18 @@ export class DetalhesComponent implements OnInit {
     });
   }
 
-  getClass(id: string) :string{
+  toggle = true;
+  status = 'Adicionar à Minha lista';
+  showDelay = new FormControl(500);
+
+  AddItem() {
+    this.toggle = !this.toggle;
+    this.status = this.toggle
+      ? 'Adicionar à Minha lista'
+      : 'Remover da Minha lista';
+  }
+
+  getClass(id: string): string {
     switch (id) {
       case 'asdasdasdasd':
         return 'Seinen';
@@ -169,7 +179,6 @@ export class DetalhesComponent implements OnInit {
         return '';
         break;
     }
-
   }
 }
 

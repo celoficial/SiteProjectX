@@ -10,7 +10,7 @@
   justify-content: center;
   justify-items: center;
   display: flex;
-  
+
   .category {
     margin-left: 4%;
     margin-top: 5%;
@@ -25,6 +25,11 @@
   display: flex;
   white-space: nowrap;
   flex-direction: row;
+
+}
+
+.carousel-cell{
+   cursor: auto;
 }
 
 .category-name {

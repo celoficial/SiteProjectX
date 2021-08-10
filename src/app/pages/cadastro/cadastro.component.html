@@ -81,12 +81,7 @@
           <mat-error *ngIf="cadastro.get('confirmpassword')?.errors?.required"
             >Campo obrigatório</mat-error
           >
-          <mat-error
-            *ngIf="
-              cadastro.get('confirmpassword')?.errors?.valid &&
-              cadastro.get('confirmpassword')?.value !=
-                cadastro.get('password')?.value
-            "
+          <mat-error *ngIf="cadastro.get('confirmpassword')?.value !=cadastro.get('password')?.value"
             >Senhas não coincidem
           </mat-error>
         </mat-form-field>
@@ -97,7 +92,8 @@
         class="btn"
         (click)="submission()"
         (click)="openSnackBar()"
-        [disabled]="cadastro.invalid"
+        [disabled] = 'cadastro.invalid'
+
       >
         Criar Conta
       </button>

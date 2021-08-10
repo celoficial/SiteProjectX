@@ -12,8 +12,7 @@
           <mat-chip-list>
             <mat-chip
               *ngFor="let tag of detalhe.tags"
-              [ngClass]="getClass(tag.id)"
-            >
+              [ngClass]="getClass(tag.id)">
               {{ tag.titulo }}
             </mat-chip>
           </mat-chip-list>
@@ -28,11 +27,13 @@
         <p>Temporadas: {{ this.temporadas }}</p>
 
         <button
+          (click)="AddItem()"
+          [ngClass]="{ add: toggle, remove: !toggle }"
           mat-raised-button
+           [matTooltipShowDelay]="showDelay.value"
           #tooltip="matTooltip"
-          matTooltip="Adicionar à Minha lista"
-          mat-mini-fab
-        >
+          matTooltip="{{ status }}"
+          mat-mini-fab>
           <mat-icon>bookmark</mat-icon>
         </button>
       </div>
@@ -50,6 +51,7 @@
           <div
             class="carousel-cell"
             *ngFor="let episodio of temporada.episodios"
+            
           >
             <app-episode [episodio]="episodio"></app-episode>
           </div>

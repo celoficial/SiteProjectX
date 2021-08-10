@@ -13,6 +13,7 @@
         <mat-panel-description>
 
           <a mat-raised #tooltip="matTooltip"
+           [matTooltipShowDelay]="showDelay.value"
           matTooltip="Ep {{episodio.num}}: {{episodio.episodioTitle}}">Ep {{episodio.num}}: {{episodio.episodioTitle}}</a>
 
           <!-- Ver {{panelOpenState ? 'menos' : 'mais'}} -->

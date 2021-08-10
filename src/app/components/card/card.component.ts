@@ -38,11 +38,8 @@ export class CardComponent implements OnInit {
     }
 
     for (let index = 0; index < this.fullStar; index++) {
-
       this.array[index] = 'star';
     }
-
-
   }
 
   getColor() {
@@ -54,5 +51,16 @@ export class CardComponent implements OnInit {
       }
       return 'Neutral';
     }
+  }
+
+  toggle = true;
+  status = 'Adicionar à Minha lista';
+  //showDelay = new FormControl(500);
+
+  AddItem() {
+    this.toggle = !this.toggle;
+    this.status = this.toggle
+      ? 'Adicionar à Minha lista'
+      : 'Remover da Minha lista';
   }
 }

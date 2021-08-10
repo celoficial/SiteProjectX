@@ -4,8 +4,25 @@
 
     <mat-tab-group>
       <mat-tab label="Assistir">
-        <div class="list-card" *ngFor="let card of listCards">
-          <app-card class="card" [card] = "card"></app-card>
+        <table matSort (matSortChange)="sortData($event)">
+          <tr>
+            <th><a>Ordenar por:</a></th>
+            <th mat-sort-header="title">Ordem Alfabética</th>
+            <th mat-sort-header="rating">Nota</th>
+          </tr>
+        </table>
+
+
+        <mat-paginator matSort #paginator
+          [length]="listCards.length"
+          [pageSize]="pageSize"
+          (page)="pageEvent = $event"
+          [hidePageSize]="true">
+        </mat-paginator>
+
+        <div matSort (matSortChange)="sortData($event)"
+          class="list-card"  *ngFor=" let card of sortedData | slice : paginator.pageIndex * pageSize : (paginator.pageIndex + 1) * pageSize">
+          <app-card class="card" [card]="card"></app-card>
         </div>
       </mat-tab>
 
