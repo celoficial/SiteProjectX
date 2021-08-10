@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ComponentsModule } from './components/components.module';
@@ -54,6 +55,7 @@ import { LoginComponent } from './pages/login/login.component';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
