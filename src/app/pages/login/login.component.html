@@ -1,0 +1,26 @@
+<div class="content">
+  <div class="container">
+    <form class="form" [formGroup] = 'login'>
+      <h2>Faça seu login</h2>
+      <p>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input type="email" matInput placeholder="Email" formControlName ="email">
+          <mat-error *ngIf="login.get('email')?.errors?.required">Campo obrigatório</mat-error>
+          <mat-error *ngIf="login.get('email')?.errors?.email">Digite um email Inválido</mat-error>
+          <mat-hint>Insira seu email</mat-hint>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <mat-label>Senha</mat-label>
+          <input type="password" matInput placeholder="Senha" formControlName ="senha">
+          <mat-error *ngIf="login.get('senha')?.errors?.required">Campo obrigatório</mat-error>
+          <mat-hint>Insira sua senha</mat-hint>
+        </mat-form-field>
+      </p>
+    </form>
+  </div>
+
+</div>

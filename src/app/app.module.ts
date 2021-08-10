@@ -23,6 +23,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MatSortModule } from '@angular/material/sort';
     DetalhesComponent,
     CadastroComponent,
     MinhalistaComponent,
+    LoginComponent
   ],
 
   imports: [
