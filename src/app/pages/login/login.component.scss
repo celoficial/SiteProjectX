@@ -11,6 +11,35 @@
         margin: 5%;
         display: flex;
     }
+    h2{
+      font-size: 3rem;
+      color: white;
+    }
+    ::placeholder{
+      color: grey;
+    }
+    mat-hint{
+      color: #AAAAAA;
+    }
+
+    .align-forms{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 790px;
+    }
+
+    .align-center{
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .d-flex-column{
+      display: flex;
+      flex-direction: column;
+      height: 75px;
+      justify-content: space-evenly;
+    }
 }
 
 
