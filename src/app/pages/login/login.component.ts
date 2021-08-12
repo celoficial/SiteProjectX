@@ -19,6 +19,9 @@ export class LoginComponent {
 
   }
 
-
+  submission() {
+    console.log(this.login.value);
+    this.login.reset();
+  }
 
 }
