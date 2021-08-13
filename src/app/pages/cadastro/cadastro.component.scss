@@ -18,11 +18,13 @@
     display: inline-block;
     padding: 5vw 0vw 5vw 0vw;
     min-width: 40vw;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .login {
     width: 38%;
-    display: inline-block;
+    display: block;
     margin-right: 0vw;
     text-align: center;
     padding: 5vw 0vw 5vw 0vw;
@@ -66,7 +68,6 @@
     margin-top: 2%;
     margin-right: 5px;
     background-color: #3b5998;
-    width: 270px;
   }
 
   .google-btn {
@@ -93,6 +94,10 @@
     background-color: #696969;
   }
 
+  .g-signin2 {
+    padding: 1rem;
+  }
+
   h2 {
     height: 20px;
     color: #83cfdf;
@@ -112,9 +117,28 @@
     padding: 1rem 0rem 0rem;
   }
 
-  .Input{
+  .Input {
     background-color: red;
   }
-
 }
 
+@media screen and (max-width: 960px) {
+  .content {
+    .form {
+      width: 100%;
+    }
+
+    .container {
+      display: block;
+    }
+
+    .login {
+      width: 100%;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

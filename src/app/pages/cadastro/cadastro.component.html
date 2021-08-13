@@ -88,7 +88,6 @@
         mat-button
         class="btn"
         (click)="submission()"
-        (click)="openSnackBar()"
         [disabled]="cadastro.invalid"
       >
         Criar Conta
@@ -104,16 +103,15 @@
       <button mat-button class="facebook-btn">
         <img src="assets/img/facebook.png" alt="" /> Continue com o Facebook
       </button>
-      <button mat-button class="google-btn">
-        <img src="assets/img/google.png" alt="" /> Continue com o Google
-      </button>
-      <button mat-button>
-        <div
-          class="g-signin2"
-          data-onsucess="onSignIn"
-          data-longtitle="true"
-        ></div>
-      </button>
+
+      <button
+        mat-button
+        class="g-signin2"
+        data-onsucess="onSignIn"
+        data-width="240"
+        data-height="40"
+        (data-onsucess)="submission()"
+      ></button>
     </div>
   </div>
 </div>

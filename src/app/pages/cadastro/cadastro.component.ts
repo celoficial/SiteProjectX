@@ -10,6 +10,9 @@ import { ConfirmPasswordValidator } from 'src/app/shared/confirm-password.valida
   styleUrls: ['./cadastro.component.scss'],
 })
 export class CadastroComponent implements OnInit {
+  
+  valid = false;
+  status = true;
   cadastro = new FormGroup(
     {
       username: new FormControl('', [
@@ -37,8 +40,22 @@ export class CadastroComponent implements OnInit {
   constructor(private snackBar: MatSnackBar) {}
 
   ngOnInit() {}
-  valid = false;
-  status = true;
+
+  onSignIn(googleUser: any) {
+    //SameSite cookie error
+    // Useful data for your client-side scripts:
+    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Don't send this directly to your server!
+    console.log('Full Name: ' + profile.getName());
+    console.log('Email: ' + profile.getEmail());
+
+    // The ID token you need to pass to your backend:
+    var id_token = googleUser.getAuthResponse().id_token;
+    console.log('ID Token: ' + id_token);
+  }
+
+
 
   openSnackBar() {
     this.snackBar.open('Conta criada com sucesso!', 'OK', {
@@ -47,8 +64,10 @@ export class CadastroComponent implements OnInit {
     });
   }
 
+
   submission() {
     console.log(this.cadastro.value);
+    this.openSnackBar();
     this.cadastro.reset();
   }
 }
