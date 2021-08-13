@@ -1,22 +1,29 @@
 <mat-toolbar class="header">
-  <a href=""><img src="assets/img/logo.png" alt=""></a>
-  <span class="title">Site de Animes</span>
-  <a href="">Home</a>
+
+  <div class="flex-logo">
+
+    <a href=""><img src="assets/img/logo.png" alt=""></a>
+    <span class="title">Site de Animes</span>
+    <a href="">Home</a>
+
+  </div>
 
 
+  <div class="flex-nav">
 
-  <span class="spacer"></span>
+    <mat-icon>account_circle</mat-icon>
+    <a href="login">Login</a>
 
-  <mat-icon>account_circle</mat-icon>
-  <a href="login">Login</a>
+    <mat-icon>bookmark</mat-icon>
 
-  <mat-icon>bookmark</mat-icon>
+    <a  href="minhalista">Minha lista</a>
 
-  <a  href="minhalista">Minha lista</a>
+    <div class="busca">
 
+      <app-search></app-search>
+      <a href=""><mat-icon>search</mat-icon></a>
+    </div>
 
-  <app-search></app-search>
-  <a href=""><mat-icon>search</mat-icon></a>
-
+  </div>
 
 </mat-toolbar>

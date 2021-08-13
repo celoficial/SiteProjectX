@@ -1,6 +1,7 @@
 .header {
   background-color: #292847 !important;
   justify-items: center;
+  justify-content: space-between;
   color: #83cfdf;
   font-size: 18px;
   position: fixed;
@@ -33,14 +34,50 @@
     // cursor: pointer;
   }
 
-  .spacer {
-    flex: 1 1 auto;
-  }
-
   img {
     width: 80px;
     cursor: pointer;
   }
+
+  .flex-logo{
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-nav{
+    display: flex;
+    align-items: center;
+  }
+
+  .busca{
+    display: flex;
+    align-items: center;
+  }
 }
 
+@media screen and (max-width: 865px){
+  .header{
+    flex-wrap: wrap;
+    height: 227px;
+    justify-content: center;
 
+
+    .flex-nav{
+       justify-content: center;
+    }
+
+    .busca{
+      display: flex;
+      align-items: center;
+    }
+
+  }
+}
+
+@media screen and (max-width: 485px){
+  .header{
+    .flex-nav{
+      flex-wrap: wrap;
+    }
+  }
+}
