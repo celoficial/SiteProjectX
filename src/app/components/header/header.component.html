@@ -17,10 +17,27 @@
     <mat-icon><a href="minhalista">bookmark</a></mat-icon>
     <a  href="minhalista" class="disp-none">Minha lista</a>
 
-    <div class="busca"> 
+    <div class="busca">
       <app-search></app-search>
       <a href=""><mat-icon>search</mat-icon></a>
     </div>
+    <button mat-icon-button class="disp-sm" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>account_circle</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>bookmark</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon></mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
 
   </div>
 

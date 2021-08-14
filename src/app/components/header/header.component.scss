@@ -53,6 +53,10 @@
     display: flex;
     align-items: center;
   }
+
+  .disp-sm{
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 865px){
@@ -80,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 625px){
   .header{
     height: 80px;
 
@@ -97,5 +101,9 @@
       width: 60px;
     }
 
+    .disp-sm{
+      visibility: visible;
+      background-color: #292847;
+    }
   }
 }

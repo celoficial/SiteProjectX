@@ -14,6 +14,7 @@ import { EpisodeComponent } from './episode/episode.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatExpansionModule,
     MatSelectModule,
     MatTooltipModule,
+    MatMenuModule,
   ],
   exports: [HeaderComponent, CardComponent, SearchComponent, EpisodeComponent],
 })
