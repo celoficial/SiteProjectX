@@ -1,6 +1,5 @@
 import { CardModel } from '../../models/cardModel';
 import { Component, OnInit } from '@angular/core';
-import {} from './listagem.component.spec';
 
 @Component({
   selector: 'app-listagem',
