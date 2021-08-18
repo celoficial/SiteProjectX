@@ -15,11 +15,12 @@ export class DetalhesComponent implements OnInit {
 
   constructor() {
     this.detalhe = {
-      animeTitle: 'Jojos Bizarre Adventure',
-      description: 'Foda pra caralho',
+      animeTitle: 'JoJos Bizarre Adventure',
+      description:
+        'O pai de Jojo adotou um maluco chamado Dio com sindrome de superioridade e agora todas as suas gerações foram amaldiçoadas a lutar contra vampiros, assassinos, psicopatas etc em eventos bizarros e no minimo perturbadores MAS pelo menos agora todo mundo tem poderes pica. ',
       id: 'sdflkgjdflgkdfs;gksredtg;erdsty',
       imgUrl:
-        'https://img.elo7.com.br/product/zoom/1EC7B91/big-poster-do-anime-jojo-s-bizarre-adventure-90x-0-cm-lo00-poster.jpg',
+        'https://image.api.playstation.com/cdn/UP0700/CUSA04897_00/9KyMrO6GjTtcrj1lC0aBENsrJroVszez.png',
       rating: 2,
       lancamento: new Date('2009-04-01'),
 
@@ -181,5 +182,3 @@ export class DetalhesComponent implements OnInit {
     }
   }
 }
-
-

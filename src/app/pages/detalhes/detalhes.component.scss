@@ -9,11 +9,10 @@
     margin: 15%;
     background-color: #292847;
     //width: 80vw;
-    width: 70%;
-    border-radius: 5px;
+    width: 70vw;
+    border-radius: 20px 20px 10px 0px;
     justify-content: center;
     align-items: center;
-    height: 120%;
   }
 }
 
@@ -22,13 +21,12 @@
 }
 
 .mat-mini-fab {
-  //color: white;
   cursor: pointer;
-  // background-color: #708ed2;
   box-shadow: none;
   align-items: center;
   display: inline;
   justify-content: center;
+  float: right;
 }
 
 .mat-mini-fab:hover {
@@ -41,13 +39,16 @@
   border-radius: 10px 10px 0px 0px;
   display: flex;
   height: 500px;
-  width: 100%;
 
   .img-description {
-    border-radius: 10px 0px 0px 0px;
-    width: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
     max-height: 500px;
+    overflow: hidden;
+    width: 700px;
+    height: auto;
   }
+
   p {
     color: rgb(145, 143, 143);
     padding: 0.25rem;
@@ -57,25 +58,30 @@
 h2 {
   color: #708ed2;
   font-size: 36px;
-  width: 80%;
   display: inline;
 }
 
 .description {
   padding: 1rem 1rem 1rem;
+  width: 60vw;
+
   h5 {
-    display: flex;
+    display: flexbox;
+    text-overflow: ellipsis;
     color: rgb(71, 70, 70);
     font-size: 16px;
     margin-top: 40px;
-    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 100%;
   }
 }
 
 .seasons {
   background-color: #292847;
   margin-top: 50px;
-  margin-left: 1%;
 
   h1 {
     color: #83cfdf;
@@ -117,12 +123,48 @@ h2 {
 
 .add {
   color: white;
-
   background-color: #708ed2;
 }
 
 .remove {
-  //color: #292847;
   background-color: #292847;
 }
 
+//     .mat-chip {
+//       padding: 3px 4px !important;
+
+@media screen and (max-width: 960px) {
+  .content {
+    .img-description {
+      object-fit: cover;
+      object-position: 0px 100px;
+      margin-top: -100px;
+      display: flex;
+      max-width: 100%;
+      height: auto;
+    }
+    .anime-info {
+      display: inline;
+    }
+
+    .description {
+      display: block;
+      background-color: rgb(245, 241, 241);
+      max-width: 100%;
+    }
+
+    .container {
+      display: inline;
+      background-color: rgb(245, 241, 241);
+      width: 70vw;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+  }
+}
