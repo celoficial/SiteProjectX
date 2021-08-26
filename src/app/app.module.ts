@@ -25,7 +25,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { LoginComponent } from './pages/login/login.component';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SearchComponent } from './pages/search/search.component';
+import { WrongRouteComponent } from './pages/wrong-route/wrong-route.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     DetalhesComponent,
     CadastroComponent,
     MinhalistaComponent,
-    LoginComponent
+    LoginComponent,
+    SearchComponent,
+    WrongRouteComponent,
   ],
 
   imports: [
@@ -57,7 +61,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatPaginatorModule,
     MatSortModule,
     RouterModule,
-    MatCheckboxModule
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

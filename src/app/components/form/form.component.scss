@@ -1,5 +1,4 @@
 .form {
- 
   background-color: #292847;
 
   input {
@@ -8,7 +7,6 @@
     background-color: #292847;
     border-radius: 30px;
     padding: 10px;
-    padding-left: 20px;
     font-size: 14px;
     height: 20px;
     outline: none;
@@ -17,15 +15,14 @@
   input:focus {
     border: 0.5px solid #83cfdf;
     transition: 0.4s ease-in-out;
-     //width: 80%;
   }
 }
 
 @media screen and (max-width: 660px) {
-.form{
-  input{
-    font-size: 12px;
-    width: 100px;
+  .form {
+    input {
+      font-size: 12px;
+      width: 100px;
+    }
   }
-}
 }

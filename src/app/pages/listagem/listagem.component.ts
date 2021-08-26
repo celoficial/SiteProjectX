@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listagem.component.scss'],
 })
 export class ListagemComponent implements OnInit {
+  filteredResult = '';
   listCards: Array<CardModel> = [
     {
       title: 'Título',

@@ -1,0 +1,17 @@
+.content {
+  background-color: #1e1f33;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: white;
+
+  .container {
+    margin-top: 100px;
+    height: 100vh;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding: 2rem;
+  }
+}

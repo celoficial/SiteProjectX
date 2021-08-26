@@ -8,11 +8,9 @@
   .container {
     margin: 15%;
     background-color: #292847;
-    //width: 80vw;
     width: 70vw;
     border-radius: 20px 20px 10px 0px;
-    justify-content: center;
-    align-items: center;
+    word-break: break-word;
   }
 }
 
@@ -57,39 +55,42 @@
 
 h2 {
   color: #708ed2;
-  font-size: 36px;
-  display: inline;
+  font-size: 32px;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .description {
-  padding: 1rem 1rem 1rem;
+  padding: 1rem;
   width: 60vw;
 
   h5 {
-    display: flexbox;
-    text-overflow: ellipsis;
     color: rgb(71, 70, 70);
     font-size: 16px;
-    margin-top: 40px;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    max-width: 100%;
+    margin-top: 40px;
   }
 }
 
 .seasons {
   background-color: #292847;
-  margin-top: 50px;
+  margin-top: 40px;
 
   h1 {
     color: #83cfdf;
-    padding: 2rem 3rem 0rem;
+    padding: 1rem;
     font-weight: 500;
   }
+
   h2 {
-    padding: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -130,9 +131,6 @@ h2 {
   background-color: #292847;
 }
 
-//     .mat-chip {
-//       padding: 3px 4px !important;
-
 @media screen and (max-width: 960px) {
   .content {
     .img-description {
@@ -160,11 +158,16 @@ h2 {
     }
 
     h2 {
-      font-size: 28px;
+      font-size: 4vw;
     }
 
-    h5 {
-      font-size: 15px;
+    h1 {
+      font-size: 3vw;
+    }
+
+    h5,
+    p {
+      font-size: 2vw;
     }
   }
 }

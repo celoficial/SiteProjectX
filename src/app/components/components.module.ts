@@ -8,19 +8,18 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './card/card.component';
-import { SearchComponent } from './search/search.component';
-
+import { FormComponent } from './form/form.component';
 import { EpisodeComponent } from './episode/episode.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     CardComponent,
-    SearchComponent,
+    FormComponent,
     EpisodeComponent,
   ],
 
@@ -37,6 +36,6 @@ import {MatMenuModule} from '@angular/material/menu';
     MatTooltipModule,
     MatMenuModule,
   ],
-  exports: [HeaderComponent, CardComponent, SearchComponent, EpisodeComponent],
+  exports: [HeaderComponent, CardComponent, FormComponent, EpisodeComponent],
 })
 export class ComponentsModule {}
