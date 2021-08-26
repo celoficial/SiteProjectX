@@ -3,17 +3,25 @@
     <div class="anime-info">
       <img class="img-description" src="{{ detalhe.imgUrl }}" alt="" />
       <div class="description">
-        <button  mat-mini-fab
-        (click)="AddItem()"
-        [ngClass]="{ add: toggle, remove: !toggle }"
-        mat-raised-button
-         [matTooltipShowDelay]="showDelay.value"
-        #tooltip="matTooltip"
-        matTooltip="{{ status }}"
-       >
-        <mat-icon>bookmark</mat-icon>
-      </button>
-        <h2>{{ detalhe.animeTitle }}</h2>
+        <button
+          mat-mini-fab
+          (click)="AddItem()"
+          [ngClass]="{ add: toggle, remove: !toggle }"
+          mat-raised-button
+          [matTooltipShowDelay]="showDelay.value"
+          #tooltip="matTooltip"
+          matTooltip="{{ status }}"
+        >
+          <mat-icon>bookmark</mat-icon>
+        </button>
+        <h2
+          mat-raised
+          #tooltip="matTooltip"
+          [matTooltipShowDelay]="showDelay.value"
+          matTooltip="{{ detalhe.animeTitle }}"
+        >
+          {{ detalhe.animeTitle }}
+        </h2>
 
         <h5>Sinopse: {{ detalhe.description }}</h5>
 
@@ -22,7 +30,8 @@
           <mat-chip-list>
             <mat-chip
               *ngFor="let tag of detalhe.tags"
-              [ngClass]="getClass(tag.id)">
+              [ngClass]="getClass(tag.id)"
+            >
               {{ tag.titulo }}
             </mat-chip>
           </mat-chip-list>
@@ -35,8 +44,6 @@
         <p>Lançamento: {{ detalhe.lancamento | date: "dd/MM/yyyy" }}</p>
         <p>Episódios: {{ this.episodios }}</p>
         <p>Temporadas: {{ this.temporadas }}</p>
-
-
       </div>
     </div>
     <div class="seasons">
@@ -52,7 +59,6 @@
           <div
             class="carousel-cell"
             *ngFor="let episodio of temporada.episodios"
-
           >
             <app-episode [episodio]="episodio"></app-episode>
           </div>

@@ -15,7 +15,7 @@ export class DetalhesComponent implements OnInit {
 
   constructor() {
     this.detalhe = {
-      animeTitle: 'JoJos Bizarre Adventure',
+      animeTitle: 'JoJos Bizarre Adventure ',
       description:
         'O pai de Jojo adotou um maluco chamado Dio com sindrome de superioridade e agora todas as suas gerações foram amaldiçoadas a lutar contra vampiros, assassinos, psicopatas etc em eventos bizarros e no minimo perturbadores MAS pelo menos agora todo mundo tem poderes pica. ',
       id: 'sdflkgjdflgkdfs;gksredtg;erdsty',
