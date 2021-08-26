@@ -1,25 +1,22 @@
-<mat-toolbar class="header">
-
+<mat-toolbar class="header" *ngIf="router.url !== '/NotFound'">
   <div class="flex-logo">
-  <a href=""><img src="assets/img/logo.png" alt=""></a>
-  <div class="display-md">
-    <span class="title">Site de Animes</span>
-    <a href="">Home</a>
+    <a href=""><img src="assets/img/logo.png" alt="" /></a>
+    <div class="display-md">
+      <span class="title">Site de Animes</span>
+      <a href="">Home</a>
+    </div>
   </div>
-  </div>
-
 
   <div class="flex-nav">
-
     <mat-icon><a href="login">account_circle</a></mat-icon>
     <a href="login" class="disp-none">Login</a>
 
     <mat-icon><a href="minhalista">bookmark</a></mat-icon>
-    <a  href="minhalista" class="disp-none">Minha lista</a>
+    <a href="minhalista" class="disp-none">Minha lista</a>
 
     <div class="busca">
-      <app-search></app-search>
-      <a href=""><mat-icon>search</mat-icon></a>
+      <app-form></app-form>
+      <a href="search"><mat-icon>search</mat-icon></a>
     </div>
     <button mat-icon-button class="disp-sm" [matMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
@@ -38,7 +35,5 @@
         <span>Disable alerts</span>
       </button>
     </mat-menu>
-
   </div>
-
 </mat-toolbar>
