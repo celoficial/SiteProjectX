@@ -1,27 +1,46 @@
-# Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
+   # ProjectX: US 
+ 
+ 
+   
+   ## [Sobre](#Sobre)
+   ***Status**: em andamento*
+   
+   US é um projeto com objetivo de catalogar e dispor informações sobre animes, permitindo que o usuário organize e encontre títulos com facilidade.
+   Foi desenvolvido para fins de aprendizado e estudo pessoal.
 
-## Development server
+  
+   ## [Instalação](#instalacao)
+   Para executar o projeto em sua máquina é preciso ter instalado as seguintes ferramentas:
+[Git](https://git-scm.com), [Visual Code](https://code.visualstudio.com). 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> Execute `ng serve` para iniciar o servidor. Navegue para `http://localhost:4200/`. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ 
+   ## Tecnologias
+   
+   - [Angular 12.0.3](https://angular.io/cli)
+   - [Angular Material](https://material.angular.io)
+   
+       
+    
+   
+   ## [Contribuição](#contribuicao)
+   [![Github Badge](https://img.shields.io/badge/gustavorsx-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gustavorsx)
+  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-rodrigues-sampaio-a478601bb/)
+   
+   [![Github Badge](https://img.shields.io/badge/karinemorais-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karine-morais)
+   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karine-morais/)
+   
+   [![Github Badge](https://img.shields.io/badge/celoficial-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/celoficial)
+   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-a-rocha/)
+   
+   [![Github Badge](https://img.shields.io/badge/sarahxwaves-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sarahxwaves)
+   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sarah-menezes-6b42ab208/)
+   
+  
+   
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
