@@ -37,7 +37,7 @@
    [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcelo-a-rocha/)
    
    [![Github Badge](https://img.shields.io/badge/sarahxwaves-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sarahxwaves)
-   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sarah-menezes-6b42ab208/)
+   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sarah-menezesb/)
    
   
    
