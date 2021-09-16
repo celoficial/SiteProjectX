@@ -8,10 +8,10 @@
   </div>
 
   <div class="flex-nav">
-    <mat-icon><a href="login">account_circle</a></mat-icon>
+    <mat-icon class="disp-none"><a href="login">account_circle</a></mat-icon>
     <a href="login" class="disp-none">Login</a>
 
-    <mat-icon><a href="minhalista">bookmark</a></mat-icon>
+    <mat-icon class="disp-none"><a href="minhalista">bookmark</a></mat-icon>
     <a href="minhalista" class="disp-none">Minha lista</a>
 
     <div class="busca">
@@ -22,18 +22,14 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <a mat-menu-item href="login">
         <mat-icon>account_circle</mat-icon>
-        <span>Redial</span>
-      </button>
-      <button mat-menu-item disabled>
+        <span>Login</span>
+      </a>
+      <a mat-menu-item href="minhalista">
         <mat-icon>bookmark</mat-icon>
-        <span>Check voice mail</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon></mat-icon>
-        <span>Disable alerts</span>
-      </button>
+        <span>Minha lista</span>
+      </a>
     </mat-menu>
   </div>
 </mat-toolbar>

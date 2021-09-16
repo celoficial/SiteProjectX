@@ -1,28 +1,19 @@
 .form {
   background-color: #292847;
-
-  input {
-    color: white;
-    border: 0.5px solid #f8f8f8;
-    background-color: #292847;
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 14px;
-    height: 20px;
-    outline: none;
-  }
-
-  input:focus {
-    border: 0.5px solid #83cfdf;
-    transition: 0.4s ease-in-out;
-  }
+}
+input{
+  color: white;
+  border: 0.5px solid #f8f8f8;
+  background-color: #292847;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 14px;
+  height: 20px;
+  outline: none;
 }
 
-@media screen and (max-width: 660px) {
-  .form {
-    input {
-      font-size: 12px;
-      width: 100px;
-    }
-  }
+input:focus {
+  border: 0.5px solid #83cfdf;
+  transition: 0.4s ease-in-out;
 }
+
